@@ -38,60 +38,56 @@ struct RoomNavigation: View {
             }label: {
                 Image(systemName: "door.right.hand.open").scaleEffect(5)
             }
-//            Text((vm.currentRoom.key?.itemName)!)
+            //            Text((vm.currentRoom.key?.itemName)!)
+            //            CharaTextView(vm: vm)
+//            Doors()
 //            CharaTextView(vm: vm)
-            Doors()
-            CharaTextView(vm: vm)
-           
+            
             if vm.showInventory {
-          
-            InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
-            
-            if showInventory {
+                
                 InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
-            }
-
-            
-//            if vm.choices.count != 0 && !roomDialog.isEmpty {
-//                RoomDialogView(vm: vm, dialogThing:vm.currentRoom.dialog ?? "")
-//            }
-            
-            
-        
-            
-            
-            
-            
-            
-            VStack{
-//                Section{
-//                    Image("\(vm.currentRoom.key?.itemImg)")
-//                }
-//                Section{
-                   Button{
+                
+                if showInventory {
+                    InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
+                }
+                
+                
+                //            if vm.choices.count != 0 && !roomDialog.isEmpty {
+                //                RoomDialogView(vm: vm, dialogThing:vm.currentRoom.dialog ?? "")
+                //            }
+                
+                
+                
+                
+                
+                
+                
+                
+                VStack{
+                    //                Section{
+                    //                    Image("\(vm.currentRoom.key?.itemImg)")
+                    //                }
+                    //                Section{
+                    Button{
                         showInventory.toggle()
                     }label: {
                         Image(systemName: "backpack.fill").scaleEffect(2.5)
                     }
                     .offset(x: 170, y: -375)
-//                }
+                    //                }
+                    
+                }.scaledToFill()
                 
-            }.scaledToFill()
-            
-           
-          
-//                StealthBarView()
-            
-            
-//            DoorButtonsNavigation(vm: vm)
-            
-        }.scaledToFill().onAppear(){
-                print()
+                
+                
+                //                StealthBarView()
+                
+                
+                //            DoorButtonsNavigation(vm: vm)
+                
             }
-        
-        
-        
-        
+        }
+        .scaledToFill()
     }
 }
 

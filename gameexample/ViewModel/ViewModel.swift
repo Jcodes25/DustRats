@@ -15,8 +15,6 @@ class ViewModel: ObservableObject {
     @Published var progress: Double = 0.0
     @Published var showInventory: Bool = false
     @Published var roomCounter = 0
-
-    @Published var showInventory: Bool = true
     @Published var randomStatusArray = [StealthStatus.zero, StealthStatus.one, StealthStatus.eight]
     @Published var barurl = "Stealth_0"
     enum StealthStatus{
@@ -87,8 +85,8 @@ class ViewModel: ObservableObject {
             roomCounter = 0
             return
         }
-        var nextRoom = currentRoom
-        while currentRoom == nextRoom {
+        let previousRoom = currentRoom
+        while currentRoom == previousRoom {
             currentRoom.move()
         }
         roomCounter += 1
