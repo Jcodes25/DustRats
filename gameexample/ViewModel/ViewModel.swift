@@ -15,7 +15,7 @@ class ViewModel: ObservableObject {
     @Published var progress: Double = 0.0
     @Published var showInventory: Bool = false
     @Published var roomCounter = 0
-    @Published var randomStatusArray = [StealthStatus.zero, StealthStatus.one, StealthStatus.eight]
+    @Published var randomStatusArray = [StealthStatus.zero, StealthStatus.one, StealthStatus.three, StealthStatus.four, StealthStatus.five, StealthStatus.six, StealthStatus.seven, StealthStatus.eight]
     @Published var barurl = "Stealth_0"
     enum StealthStatus{
         case zero, one, two, three, four, five, six, seven, eight, nine, ten

@@ -24,11 +24,12 @@ struct StealthBarView: View {
 
         
            
-        Image("\(vm.barurl)").onTapGesture{
-            print("this is working kinda")
-            vm.barurl = vm.riskMeterDisplay(status: vm.randomStatusArray.randomElement() ?? .ten)
-                       }
-            
+        Section{
+            Image("\(vm.barurl)").resizable().aspectRatio(contentMode: .fit).onTapGesture{
+                print("this is working kinda")
+                vm.barurl = vm.riskMeterDisplay(status: vm.randomStatusArray.randomElement() ?? .ten)
+                           }
+        }.frame(height: 40)
                
 //                ProgressView(value: progress, total: 100){
 //                    Text("Risk Meter")
