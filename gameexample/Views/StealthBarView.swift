@@ -26,7 +26,7 @@ struct StealthBarView: View {
            
         Image("\(vm.barurl)").onTapGesture{
             print("this is working kinda")
-            vm.barurl = vm.riskMeterDisplay(status: vm.randomStatusArray.randomElement() ?? .ten)
+            vm.barurl = vm.randomStatusArray.randomElement()!.description
                        }
             
                
