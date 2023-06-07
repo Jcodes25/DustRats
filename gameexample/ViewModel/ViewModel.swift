@@ -14,12 +14,32 @@ class ViewModel: ObservableObject {
     @Published var trash: Trash
     @Published var progress: Double = 0.0
     @Published var showInventory: Bool = false
-    @Published var roomCounter = 0
+    @Published var roomCounter: roomCount
     @Published var randomStatusArray = [StealthStatus.zero, StealthStatus.one, StealthStatus.eight]
     @Published var barurl = "Stealth_0"
     enum StealthStatus{
         case zero, one, two, three, four, five, six, seven, eight, nine, ten
         
+    }
+    enum roomCount{
+        case zero, one, two, three, four, five
+        
+        mutating func toggle() {
+            switch self {
+            case .zero:
+                self = .one
+            case .one:
+                self = .two
+            case .two:
+                self = .three
+            case . three:
+                self = .four
+            case .four:
+                self = .five
+            case .five:
+                self = .zero
+            }
+        }
     }
     func riskMeterDisplay(status: StealthStatus ) -> String{
         if status == .zero{
@@ -46,6 +66,23 @@ class ViewModel: ObservableObject {
             return "Stealth_10"
         }
     }
+    
+    func roomCounterDisplay(position: roomCount) -> String {
+        if position == .zero {
+            return "roomCounter1"
+        } else if position == .one {
+            return "roomCounter2"
+            } else if position == .two {
+            return "roomCounter3"
+            } else if position == .three {
+            return "roomCounter4"
+            } else if position == .four{
+            return "roomCounter5"
+            } else {
+                return "roomCounter6"
+            }
+        }
+    
     var choices:[Choice] {
         if let choices = currentRoom.choices {
             return choices
@@ -80,16 +117,16 @@ class ViewModel: ObservableObject {
     }
     
     func changeLookOfRoom() {
-        if roomCounter == 5 {
+        if roomCounter == .four {
+            roomCounter = .five
             self.theStairs()
-            roomCounter = 0
             return
         }
         let previousRoom = currentRoom
         while currentRoom == previousRoom {
             currentRoom.move()
         }
-        roomCounter += 1
+        roomCounter.toggle()
     }
     
     
@@ -97,5 +134,6 @@ class ViewModel: ObservableObject {
         self.currentRoom = Room.rooms[0]
         self.player = .player
         self.trash = .init(itemsInTrash: [])
+        self.roomCounter = .zero
     }
 }
