@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct StealthBarView: View {
- //   var randomNumbersInAnArray = [1.0,14.0,7.0]
     @StateObject var vm = ViewModel()
     @State private var progress: Double = 0.0
     let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
@@ -16,35 +15,35 @@ struct StealthBarView: View {
         progress += 1.0
     }
     var body: some View {
-           
-           // List{
-                
         
-            
-
+        // List{
         
-           
+        
+        
+        
+        
+        
         Image("\(vm.barurl)").onTapGesture{
             print("this is working kinda")
             vm.barurl = vm.randomStatusArray.randomElement()!.description
-                       }
-            
-               
-//                ProgressView(value: progress, total: 100){
-//                    Text("Risk Meter")
-//                } currentValueLabel: {
-//                    Text("\(Int(progress))%")
-//                }.frame(width:200).background(.blue).tint(.purple)
-//                .progressViewStyle(.linear)
-//                .onTapGesture{
-//                addToTheThing()
-//            }
-//        
-      
-               
-                
-           // }.scaledToFit()
+        }
         
+        
+        //                ProgressView(value: progress, total: 100){
+        //                    Text("Risk Meter")
+        //                } currentValueLabel: {
+        //                    Text("\(Int(progress))%")
+        //                }.frame(width:200).background(.blue).tint(.purple)
+        //                .progressViewStyle(.linear)
+        //                .onTapGesture{
+        //                addToTheThing()
+        //            }
+        //
+        
+        
+        
+        // }.scaledToFit()
+
         
     }
 }

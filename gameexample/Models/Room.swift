@@ -16,7 +16,7 @@ struct Room: Identifiable {
     var choices:[Choice]?
     var roompic:String
     var itemsInRoom: [Item]?
-    //Create the move function that randomizes rooms
+
     mutating func move() {
         self = Room.rooms.randomElement()!
     }
