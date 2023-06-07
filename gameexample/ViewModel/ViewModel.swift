@@ -17,7 +17,7 @@ class ViewModel: ObservableObject {
     @Published var roomCounter: RoomCount
     @Published var randomStatusArray = [StealthStatus.zero, StealthStatus.one, StealthStatus.eight]
     @Published var barurl = "Stealth_0"
-    
+
     var choices:[Choice] {
         if let choices = currentRoom.choices {
             return choices

@@ -43,7 +43,7 @@ struct StealthBarView: View {
         
         
         // }.scaledToFit()
-        
+
         
     }
 }
