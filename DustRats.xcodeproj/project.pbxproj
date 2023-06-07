@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		17EB9AF92A2FD5AC009BA401 /* InventoryBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99F843C2A2E512F006B13D0 /* InventoryBoxView.swift */; };
+		17EB9AFF2A3121BA009BA401 /* RoomCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9AFE2A3121BA009BA401 /* RoomCount.swift */; };
+		17EB9B012A312270009BA401 /* StealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B002A312270009BA401 /* StealthBar.swift */; };
 		74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C14DEC2A0EB976000BD90B /* RoomNavigation.swift */; };
 		74C14DEF2A0EB9BE000BD90B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C14DEE2A0EB9BE000BD90B /* ViewModel.swift */; };
 		74CD79522A267B3200BCE74E /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD79512A267B3200BCE74E /* Choice.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17EB9AFE2A3121BA009BA401 /* RoomCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCount.swift; sourceTree = "<group>"; };
+		17EB9B002A312270009BA401 /* StealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StealthBar.swift; sourceTree = "<group>"; };
 		74C14DEC2A0EB976000BD90B /* RoomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNavigation.swift; sourceTree = "<group>"; };
 		74C14DEE2A0EB9BE000BD90B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		74CD79512A267B3200BCE74E /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				E7D1D6E92A0AE1EF0056FBDB /* Room.swift */,
+				17EB9B002A312270009BA401 /* StealthBar.swift */,
+				17EB9AFE2A3121BA009BA401 /* RoomCount.swift */,
 				74CD79572A267B7100BCE74E /* Item.swift */,
 				74CD79552A267B5C00BCE74E /* Person.swift */,
 				74CD79532A267B4100BCE74E /* Trash.swift */,
@@ -271,10 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EB9AFF2A3121BA009BA401 /* RoomCount.swift in Sources */,
 				E7DFD3282A2FA187004C9C42 /* Doors.swift in Sources */,
 				E7D1D6EC2A0C3A510056FBDB /* test2.swift in Sources */,
 				E7D1D6EA2A0AE1EF0056FBDB /* Room.swift in Sources */,
 				17EB9AF92A2FD5AC009BA401 /* InventoryBoxView.swift in Sources */,
+				17EB9B012A312270009BA401 /* StealthBar.swift in Sources */,
 				74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */,
 				E78B948D2A27A858006E5313 /* DoorButtonsNavigation.swift in Sources */,
 				74C14DEF2A0EB9BE000BD90B /* ViewModel.swift in Sources */,
