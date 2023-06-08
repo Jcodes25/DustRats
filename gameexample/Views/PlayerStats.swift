@@ -91,17 +91,17 @@ struct PlayerStats: View {
                         //Spacer().frame(width:46)
                         Section{
                             Spacer().frame(width: 10)
-                            Text("STR:10").foregroundColor(.orange)
-                            Text("CHA:10").foregroundColor(.orange)
-                            Text("INT:10").foregroundColor(.orange)
-                            Text("LCK:10").foregroundColor(.orange)
+                            Text("STR:\(vm.player.strength)").foregroundColor(.orange)
+                            Text("CHA:\(vm.player.charisma)").foregroundColor(.orange)
+                            Text("INT:\(vm.player.intelligence)").foregroundColor(.orange)
+                            Text("LCK:\(vm.player.Luck)").foregroundColor(.orange)
                         }
 
                     }
                 }
             
             
-            //-------------------
+            //--------------------------------------------
             VStack{
                 
             }

@@ -43,6 +43,10 @@ struct InventoryView: View {
                                         
                                         tappedOnItem = vm.player.inventory[thing]
                                         print(tappedOnItem.itemImg!)
+                                        print("effeciency\(tappedOnItem.effectEffeciency)")
+                                        print("effeciency\(tappedOnItem.effectOfTheItem)")
+                                        ///JUST A TEST   
+                                        vm.player.strength += 1
                                         //                                        if vm.currentRoom.key?.itemName == vm.player.inventory[thing].itemName{
                                         //                                            vm.trash.itemsInTrash.append(vm.player.inventory[thing])
                                         //                                            vm.player.inventory.remove(at: thing)
@@ -58,6 +62,7 @@ struct InventoryView: View {
                                         //
                                         //                                        }
                                     }label:{
+                                        
                                         Image(vm.player.inventory[thing].itemImg ?? "")
                                             .resizable().scaledToFit()
                                             .border(.white)

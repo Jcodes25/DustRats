@@ -5,6 +5,9 @@
 //  Created by Cory Tripathy on 5/12/23.
 //
 
+
+//FLESH OUT THE ITEMS AND THE NAVIGATION THROUGHOUT THE CHOICES THAT THE PLAYER WILL MAKE
+
 import SwiftUI
 
 struct RoomNavigation: View {
