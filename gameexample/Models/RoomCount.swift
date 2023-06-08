@@ -11,17 +11,17 @@ enum RoomCount{
     var position: String {
         switch self {
         case .zero:
-          return  "roomCounter1"
+          return  "roomCounter0"
         case .one:
-          return  "roomCounter2"
+          return  "roomCounter1"
         case .two:
-          return  "roomCounter3"
+          return  "roomCounter2"
         case .three:
-          return  "roomCounter4"
+          return  "roomCounter3"
         case .four:
-          return  "roomCounter5"
+          return  "roomCounter4"
         case .five:
-          return  "roomCounter6"
+          return  "roomCounter5"
         }
     }
     
