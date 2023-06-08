@@ -15,6 +15,7 @@
 		74CD79562A267B5C00BCE74E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD79552A267B5C00BCE74E /* Person.swift */; };
 		74CD79582A267B7100BCE74E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD79572A267B7100BCE74E /* Item.swift */; };
 		A935FAD92A2913BF00B3CDDF /* TextboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A935FAD82A2913BF00B3CDDF /* TextboxView.swift */; };
+		E708E14F2A311363002278C7 /* NarrativeTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708E14E2A311363002278C7 /* NarrativeTextBox.swift */; };
 		E7175B402A17D09A0056A94D /* ChakraPetch-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B3D2A17D0110056A94D /* ChakraPetch-Bold.ttf */; };
 		E7175B412A17D09E0056A94D /* ChakraPetch-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */; };
 		E7175B422A17D0A30056A94D /* ChakraPetch-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B3A2A17D0110056A94D /* ChakraPetch-Light.ttf */; };
@@ -53,6 +54,7 @@
 		A935FAD82A2913BF00B3CDDF /* TextboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextboxView.swift; sourceTree = "<group>"; };
 		A987571C2A2A6DB200226BE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A99F843C2A2E512F006B13D0 /* InventoryBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryBoxView.swift; sourceTree = "<group>"; };
+		E708E14E2A311363002278C7 /* NarrativeTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrativeTextBox.swift; sourceTree = "<group>"; };
 		E7175B362A17D0110056A94D /* ChakraPetch-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-Regular.ttf"; sourceTree = "<group>"; };
 		E7175B372A17D0110056A94D /* ChakraPetch-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-SemiBold.ttf"; sourceTree = "<group>"; };
 		E7175B382A17D0110056A94D /* ChakraPetch-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-Medium.ttf"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E78B948C2A27A858006E5313 /* DoorButtonsNavigation.swift */,
 				E7DFD3272A2FA187004C9C42 /* Doors.swift */,
 				E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */,
+				E708E14E2A311363002278C7 /* NarrativeTextBox.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				E7D1D6D22A043EE50056FBDB /* gameexampleApp.swift in Sources */,
 				E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */,
 				A935FAD92A2913BF00B3CDDF /* TextboxView.swift in Sources */,
+				E708E14F2A311363002278C7 /* NarrativeTextBox.swift in Sources */,
 				74CD79562A267B5C00BCE74E /* Person.swift in Sources */,
 				E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */,
 				E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */,

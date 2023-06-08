@@ -43,7 +43,7 @@ struct RoomNavigation: View {
             //            CharaTextView(vm: vm)
 //            Doors()
 //            CharaTextView(vm: vm)
-            PlayerStats()
+            PlayerStats(vm:vm)
             if vm.showInventory {
                 
                 InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
@@ -88,7 +88,7 @@ struct RoomNavigation: View {
                 //            DoorButtonsNavigation(vm: vm)
                 
             }
-            Doors()
+            Doors(vm:vm)
            
         }
         .scaledToFill()

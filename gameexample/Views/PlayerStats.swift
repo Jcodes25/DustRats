@@ -73,7 +73,7 @@ struct PlayerStats: View {
                 }
                 path.fill(Color("InsideTextBoxColor"))
                     .overlay(path.stroke(Color("BorderTextBox"), lineWidth: 2))
-            }.offset(x:14)
+            }.offset(x:20)
             
           //  ZStack{
             
