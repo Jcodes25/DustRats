@@ -33,22 +33,19 @@ struct RoomNavigation: View {
     var body: some View {
         ZStack(alignment:  Alignment(horizontal: .center, vertical: .center)){
             Image("\(vm.currentRoom.roompic)")
-            
-//            Button{
-//                vm.changeLookOfRoom()
-//            }label: {
-//                Image(systemName: "door.right.hand.open").scaleEffect(5)
-//            }
+          
+            Image("\(vm.roomCounterDisplay(position: vm.roomCounter))")
+                .offset(y: -300)
             //            Text((vm.currentRoom.key?.itemName)!)
             //            CharaTextView(vm: vm)
 //            Doors()
 //            CharaTextView(vm: vm)
+            
+            
+                
+               
             PlayerStats(vm:vm)
             if vm.showInventory {
-                
-                InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
-                
-                if showInventory {
                     InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
                 }
                 
@@ -64,21 +61,6 @@ struct RoomNavigation: View {
                 
                 
                 
-                VStack{
-                    //                Section{
-                    //                    Image("\(vm.currentRoom.key?.itemImg)")
-                    //                }
-                    //                Section{
-                    Button{
-                        showInventory.toggle()
-                    }label: {
-                        Image(systemName: "backpack.fill").scaleEffect(2.5)
-                    }
-                    .offset(x: 170, y: -375)
-                    //                }
-                    
-                }.scaledToFill()
-                
                 
                 
                 
@@ -87,9 +69,7 @@ struct RoomNavigation: View {
                 
                 //            DoorButtonsNavigation(vm: vm)
                 
-            }
             Doors(vm:vm)
-           
         }
         .scaledToFill()
     }
