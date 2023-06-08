@@ -39,7 +39,7 @@ struct RoomNavigation: View {
                 Image(systemName: "door.right.hand.open").scaleEffect(5)
             }
             Image("\(vm.roomCounter.position)")
-                .offset(y: -300)
+                .offset(x: 1, y: -363)
             //            Text((vm.currentRoom.key?.itemName)!)
             //            CharaTextView(vm: vm)
 //            Doors()
