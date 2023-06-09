@@ -44,7 +44,9 @@ struct RoomNavigation: View {
                 
               
             Doors(vm:vm)
-                if showInventory {
+            
+            PlayerStats(vm:vm)
+            if vm.showInventory {
                     InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
                 }
                 
