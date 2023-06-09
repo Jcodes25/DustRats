@@ -23,10 +23,19 @@ struct StealthBarView: View {
         
         
         
-        Image("\(vm.barurl)").onTapGesture{
-            print("this is working kinda")
-            vm.barurl = vm.randomStatusArray.randomElement()!.description
-        }
+        Section{
+            Image("\(vm.barurl)").resizable().aspectRatio(contentMode: .fit).onTapGesture{
+                            print("this is working kinda")
+                            vm.barurl = vm.randomStatusArray.randomElement()!.description
+                        }
+        }.frame(height: 40)
+        
+        
+        
+        //            .onTapGesture{
+        //            print("this is working kinda")
+        //            vm.barurl = vm.randomStatusArray.randomElement()!.description
+        //        }
         
         
         //                ProgressView(value: progress, total: 100){
