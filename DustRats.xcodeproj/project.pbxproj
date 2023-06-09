@@ -10,6 +10,7 @@
 		17EB9AF92A2FD5AC009BA401 /* InventoryBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99F843C2A2E512F006B13D0 /* InventoryBoxView.swift */; };
 		17EB9AFF2A3121BA009BA401 /* RoomCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9AFE2A3121BA009BA401 /* RoomCount.swift */; };
 		17EB9B012A312270009BA401 /* StealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B002A312270009BA401 /* StealthBar.swift */; };
+		17EB9B032A326A7F009BA401 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B022A326A7F009BA401 /* Event.swift */; };
 		74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C14DEC2A0EB976000BD90B /* RoomNavigation.swift */; };
 		74C14DEF2A0EB9BE000BD90B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C14DEE2A0EB9BE000BD90B /* ViewModel.swift */; };
 		74CD79522A267B3200BCE74E /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD79512A267B3200BCE74E /* Choice.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		17EB9AFE2A3121BA009BA401 /* RoomCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCount.swift; sourceTree = "<group>"; };
 		17EB9B002A312270009BA401 /* StealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StealthBar.swift; sourceTree = "<group>"; };
+		17EB9B022A326A7F009BA401 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		74C14DEC2A0EB976000BD90B /* RoomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNavigation.swift; sourceTree = "<group>"; };
 		74C14DEE2A0EB9BE000BD90B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		74CD79512A267B3200BCE74E /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				E7D1D6E92A0AE1EF0056FBDB /* Room.swift */,
 				17EB9B002A312270009BA401 /* StealthBar.swift */,
+				17EB9B022A326A7F009BA401 /* Event.swift */,
 				17EB9AFE2A3121BA009BA401 /* RoomCount.swift */,
 				74CD79572A267B7100BCE74E /* Item.swift */,
 				74CD79552A267B5C00BCE74E /* Person.swift */,
@@ -301,6 +304,7 @@
 				74CD79562A267B5C00BCE74E /* Person.swift in Sources */,
 				E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */,
 				E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */,
+				17EB9B032A326A7F009BA401 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
