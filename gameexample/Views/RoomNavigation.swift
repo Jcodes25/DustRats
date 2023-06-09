@@ -36,6 +36,8 @@ struct RoomNavigation: View {
     var body: some View {
         ZStack(alignment:  Alignment(horizontal: .center, vertical: .center)){
             Image("\(vm.currentRoom.roompic)")
+            Doors(vm:vm)
+            
           
             Image("\(vm.roomCounterDisplay(position: vm.roomCounter))")
                 .offset(y: -300)
@@ -45,7 +47,7 @@ struct RoomNavigation: View {
 //            CharaTextView(vm: vm)
             
             
-                
+            NarrativeTextBox(vm:vm)
                
             PlayerStats(vm:vm)
             if vm.showInventory {
@@ -72,7 +74,7 @@ struct RoomNavigation: View {
                 
                 //            DoorButtonsNavigation(vm: vm)
                 
-            Doors(vm:vm)
+            
         }
         .scaledToFill()
     }

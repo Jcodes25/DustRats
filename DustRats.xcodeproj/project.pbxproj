@@ -16,7 +16,6 @@
 		74CD79582A267B7100BCE74E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD79572A267B7100BCE74E /* Item.swift */; };
 		A935FAD92A2913BF00B3CDDF /* TextboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A935FAD82A2913BF00B3CDDF /* TextboxView.swift */; };
 		E708E14F2A311363002278C7 /* NarrativeTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708E14E2A311363002278C7 /* NarrativeTextBox.swift */; };
-		E708E1512A3252AB002278C7 /* ChoicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708E1502A3252AB002278C7 /* ChoicesModel.swift */; };
 		E7175B402A17D09A0056A94D /* ChakraPetch-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B3D2A17D0110056A94D /* ChakraPetch-Bold.ttf */; };
 		E7175B412A17D09E0056A94D /* ChakraPetch-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */; };
 		E7175B422A17D0A30056A94D /* ChakraPetch-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B3A2A17D0110056A94D /* ChakraPetch-Light.ttf */; };
@@ -27,6 +26,7 @@
 		E7175B472A17D0A30056A94D /* ChakraPetch-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B362A17D0110056A94D /* ChakraPetch-Regular.ttf */; };
 		E7175B482A17D0A30056A94D /* ChakraPetch-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B392A17D0110056A94D /* ChakraPetch-LightItalic.ttf */; };
 		E7175B492A17D0A30056A94D /* ChakraPetch-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B372A17D0110056A94D /* ChakraPetch-SemiBold.ttf */; };
+		E76E880F2A338D5300349509 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76E880E2A338D5300349509 /* StoryModel.swift */; };
 		E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947A2A2670A4006E5313 /* InventoryView.swift */; };
 		E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947C2A2677AE006E5313 /* StealthBarView.swift */; };
 		E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B948A2A27A429006E5313 /* CharaTextView.swift */; };
@@ -56,7 +56,6 @@
 		A987571C2A2A6DB200226BE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A99F843C2A2E512F006B13D0 /* InventoryBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryBoxView.swift; sourceTree = "<group>"; };
 		E708E14E2A311363002278C7 /* NarrativeTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrativeTextBox.swift; sourceTree = "<group>"; };
-		E708E1502A3252AB002278C7 /* ChoicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoicesModel.swift; sourceTree = "<group>"; };
 		E7175B362A17D0110056A94D /* ChakraPetch-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-Regular.ttf"; sourceTree = "<group>"; };
 		E7175B372A17D0110056A94D /* ChakraPetch-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-SemiBold.ttf"; sourceTree = "<group>"; };
 		E7175B382A17D0110056A94D /* ChakraPetch-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-Medium.ttf"; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		E7175B3D2A17D0110056A94D /* ChakraPetch-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-Bold.ttf"; sourceTree = "<group>"; };
 		E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E7175B3F2A17D0110056A94D /* ChakraPetch-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E76E880E2A338D5300349509 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		E78B947A2A2670A4006E5313 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		E78B947C2A2677AE006E5313 /* StealthBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StealthBarView.swift; sourceTree = "<group>"; };
 		E78B948A2A27A429006E5313 /* CharaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharaTextView.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				74CD79552A267B5C00BCE74E /* Person.swift */,
 				74CD79532A267B4100BCE74E /* Trash.swift */,
 				74CD79512A267B3200BCE74E /* Choice.swift */,
-				E708E1502A3252AB002278C7 /* ChoicesModel.swift */,
+				E76E880E2A338D5300349509 /* StoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +282,7 @@
 				E7D1D6EA2A0AE1EF0056FBDB /* Room.swift in Sources */,
 				17EB9AF92A2FD5AC009BA401 /* InventoryBoxView.swift in Sources */,
 				74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */,
+				E76E880F2A338D5300349509 /* StoryModel.swift in Sources */,
 				E78B948D2A27A858006E5313 /* DoorButtonsNavigation.swift in Sources */,
 				74C14DEF2A0EB9BE000BD90B /* ViewModel.swift in Sources */,
 				E7D1D6E22A057D9B0056FBDB /* room2View.swift in Sources */,
@@ -297,7 +298,6 @@
 				E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */,
 				A935FAD92A2913BF00B3CDDF /* TextboxView.swift in Sources */,
 				E708E14F2A311363002278C7 /* NarrativeTextBox.swift in Sources */,
-				E708E1512A3252AB002278C7 /* ChoicesModel.swift in Sources */,
 				74CD79562A267B5C00BCE74E /* Person.swift in Sources */,
 				E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */,
 				E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */,

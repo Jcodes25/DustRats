@@ -7,9 +7,16 @@
 
 import Foundation
 
+
 struct Choice:Identifiable{
     let id = UUID()
     var description:String
-    var effect:String
-    var image:String
+    var image: String?
+    var type: choiceType
+    var item: Item?
+    var nextStoryThing: storyThing?
+}
+
+enum choiceType{
+    case item, decision
 }
