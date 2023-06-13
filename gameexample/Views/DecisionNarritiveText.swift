@@ -1,47 +1,40 @@
 //
-//  NarrativeTextBox.swift
+//  DecisionNarritiveText.swift
 //  DustRats
 //
-//  Created by Tyson Laroyce Walker II on 6/9/23.
+//  Created by Tyson Laroyce Walker II on 6/12/23.
 //
 
 import SwiftUI
 
-struct NarrativeTextBox: View {
-    @StateObject var vm = ViewModel()
-    @State var textFromTheThing = ViewModel().roomDialog?.text
+struct DecisionNarritiveText: View {
     var body: some View {
+        @StateObject var vm = ViewModel()
         ZStack(alignment:  Alignment(horizontal: .center, vertical: .center)){
            // Image("\(vm.currentRoom.roompic)")
             
           
-                NarrativeBackground(vm:vm)
+            DecisionNarrativeTextBoxView(vm:vm)
             
             
             VStack{
-                Spacer().frame(height:274)
+                Spacer().frame(height:10)
                // Section{
                    
                     ScrollView{
                         Text(vm.roomDialog?.text ?? "").font(.custom(
                             "ChakraPetch-Bold",
                             fixedSize: 18)).padding().foregroundColor(.white)
+                            
                     }
                    
              //   }
-                    .frame(width:320, height:222)
+                    .frame(width:280, height:300)
              
               //  Spacer()
                 HStack{
-//                    ForEach(vm.roomDialog.choice){ thing in
-//                        Button(){
-//                            vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [])
-//                        } label:{
-//                            Text(thing.description)
-//                        }
-//
-//                    }
-                    HStack{
+
+                    VStack{
                         ForEach(vm.roomDialog?.choice ?? []){ thing in
                             Button{
                                 if (thing.nextStoryThing != nil){
@@ -57,8 +50,6 @@ struct NarrativeTextBox: View {
                                     Text("\(thing.description)").font(.custom(
                                         "ChakraPetch-Bold",
                                         fixedSize: 18)).padding().foregroundColor(.white)
-                                    Image("column").resizable().aspectRatio(contentMode: .fit)
-                                    
                                 }
                             }
                            
@@ -81,15 +72,15 @@ struct NarrativeTextBox: View {
                   
                 }
                 
-            }.frame(width:320, height:300)
+            }.frame(width:320, height:300).offset(x:41)
         }
         
        
     }
 }
 
-struct NarrativeTextBox_Previews: PreviewProvider {
+struct DecisionNarritiveText_Previews: PreviewProvider {
     static var previews: some View {
-        NarrativeTextBox()
+        DecisionNarritiveText()
     }
 }

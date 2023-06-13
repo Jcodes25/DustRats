@@ -44,7 +44,10 @@ struct RoomNavigation: View {
                 
             
             Doors(vm:vm)
-            NarrativeTextBox(vm:vm)
+            if vm.roomDialog?.text != nil {
+                NarrativeTextBox(vm:vm).offset(y:-30)
+            }
+            
             
             PlayerStats(vm:vm)
             if vm.showInventory {
