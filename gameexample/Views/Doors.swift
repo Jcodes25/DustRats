@@ -50,7 +50,6 @@ struct Doors: View {
                     .overlay(path.stroke(Color("BorderTextBox"), lineWidth: 2))
                     .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
                         vm.changeLookOfRoom()
-                        vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? storyThing(text: "", choice: [])
                     }
                    
                 
@@ -91,7 +90,6 @@ struct Doors: View {
                     .overlay(path4.stroke(Color("BorderTextBox"), lineWidth: 2))
                     .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
                         vm.changeLookOfRoom()
-                        vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? storyThing(text: "", choice: [])
                     }
                    
                 
@@ -132,7 +130,6 @@ struct Doors: View {
                     .overlay(path5.stroke(Color("BorderTextBox"), lineWidth: 2))
                     .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
                         vm.changeLookOfRoom()
-                        vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? storyThing(text: "", choice: [])
                     }
                 
                 

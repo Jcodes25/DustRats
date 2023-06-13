@@ -45,6 +45,7 @@ struct RoomNavigation: View {
             
             Doors(vm:vm)
             NarrativeTextBox(vm:vm)
+                
             
             PlayerStats(vm:vm)
             if vm.showInventory {
