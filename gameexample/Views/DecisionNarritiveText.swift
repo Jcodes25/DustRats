@@ -46,11 +46,19 @@ struct DecisionNarritiveText: View {
                                 
                                 print("\(vm.roomDialog?.text)")
                             } label:{
-                                VStack(spacing: -16){
+                               
+                                ZStack{
+                                    GreyChoiceView()
+                                    
+                                        
+                                    
                                     Text("\(thing.description)").font(.custom(
-                                        "ChakraPetch-Bold",
-                                        fixedSize: 18)).padding().foregroundColor(.white)
-                                }
+                                        "ChakraPetch-Light",
+                                        fixedSize: 18)).padding().foregroundColor(Color("DialogChoicesColor"))
+                                        .frame(width:270, height:80).offset(y:14)
+                                    }.frame(height:70)
+                                   
+                                
                             }
                            
                         }
@@ -68,7 +76,7 @@ struct DecisionNarritiveText: View {
 //                            Image("column").resizable().aspectRatio(contentMode: .fit)
 //
 //                        }
-                    }.frame(width:400, height:200).offset(y:-15)
+                    }.frame(width:400, height:200).offset(y:-17)
                   
                 }
                 

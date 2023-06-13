@@ -27,6 +27,7 @@
 		E7175B472A17D0A30056A94D /* ChakraPetch-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B362A17D0110056A94D /* ChakraPetch-Regular.ttf */; };
 		E7175B482A17D0A30056A94D /* ChakraPetch-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B392A17D0110056A94D /* ChakraPetch-LightItalic.ttf */; };
 		E7175B492A17D0A30056A94D /* ChakraPetch-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B372A17D0110056A94D /* ChakraPetch-SemiBold.ttf */; };
+		E757F8E82A38DA7100B3500A /* GreyChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */; };
 		E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947A2A2670A4006E5313 /* InventoryView.swift */; };
 		E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947C2A2677AE006E5313 /* StealthBarView.swift */; };
 		E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B948A2A27A429006E5313 /* CharaTextView.swift */; };
@@ -72,6 +73,7 @@
 		E7175B3D2A17D0110056A94D /* ChakraPetch-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-Bold.ttf"; sourceTree = "<group>"; };
 		E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E7175B3F2A17D0110056A94D /* ChakraPetch-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyChoiceView.swift; sourceTree = "<group>"; };
 		E78B947A2A2670A4006E5313 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		E78B947C2A2677AE006E5313 /* StealthBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StealthBarView.swift; sourceTree = "<group>"; };
 		E78B948A2A27A429006E5313 /* CharaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharaTextView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				E7D46DF32A37808700B4A8E3 /* NarrativeBackground.swift */,
 				E7D46DF52A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift */,
 				E7D46DF72A37AEAB00B4A8E3 /* DecisionNarritiveText.swift */,
+				E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				74CD79522A267B3200BCE74E /* Choice.swift in Sources */,
 				E7D46DF42A37808700B4A8E3 /* NarrativeBackground.swift in Sources */,
 				E7D1D6E82A0A2AFC0056FBDB /* test.swift in Sources */,
+				E757F8E82A38DA7100B3500A /* GreyChoiceView.swift in Sources */,
 				74CD79542A267B4100BCE74E /* Trash.swift in Sources */,
 				E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */,
 				E7D1D6E62A058A9E0056FBDB /* forward.swift in Sources */,
