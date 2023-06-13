@@ -11,7 +11,7 @@ struct DecisionNarrativeTextBoxView: View {
     @StateObject var vm = ViewModel()
     var body: some View {
         ZStack(alignment:  Alignment(horizontal: .center, vertical: .center)){
-            Image("\(vm.currentRoom.roompic)")
+        //    Image("\(vm.currentRoom.roompic)")
             Section{
                 let path = Path { path in
                     let width: CGFloat = 342

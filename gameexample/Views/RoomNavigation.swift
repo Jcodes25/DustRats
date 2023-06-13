@@ -45,7 +45,8 @@ struct RoomNavigation: View {
             
             Doors(vm:vm)
             if vm.roomDialog?.text != nil {
-                NarrativeTextBox(vm:vm).offset(y:-30)
+             //   NarrativeTextBox(vm:vm).offset(y:-30)
+                DecisionNarritiveText()
             }
             
             
