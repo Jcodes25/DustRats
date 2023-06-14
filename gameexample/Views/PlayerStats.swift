@@ -89,13 +89,14 @@ struct PlayerStats: View {
                         }.offset(y:-22)
 
                         //Spacer().frame(width:46)
-                        Section{
-                            Spacer().frame(width: 10)
-                            Text("STR:\(vm.player.strength)").foregroundColor(.orange)
-                            Text("CHA:\(vm.player.charisma)").foregroundColor(.orange)
-                            Text("INT:\(vm.player.intelligence)").foregroundColor(.orange)
-                            Text("LCK:\(vm.player.Luck)").foregroundColor(.orange)
-                        }
+//                        Section{
+//                            Spacer().frame(width: 10)
+//                            Text("STR:\(vm.player.strength)").foregroundColor(.orange)
+//                            Text("CHA:\(vm.player.charisma)").foregroundColor(.orange)
+//                            Text("INT:\(vm.player.intelligence)").foregroundColor(.orange)
+//                            Text("LCK:\(vm.player.Luck)").foregroundColor(.orange)
+//                        }
+                        StatsAndStuff()
 
                     }
                 }
@@ -110,7 +111,7 @@ struct PlayerStats: View {
                 Spacer().frame(height:659)
                 HStack{
                     Spacer().frame(width:80)
-                    StealthBarView()
+                    StealthBarView(vm:vm)
                     Spacer().frame(width:50)
                     Button{
                         print("was: \(vm.showInventory)")

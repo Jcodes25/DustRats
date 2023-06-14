@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct DecisionNarritiveText: View {
+    @StateObject var vm = ViewModel()
+  //  @State var textFromTheThing = ViewModel().roomDialog?.text
     var body: some View {
-        @StateObject var vm = ViewModel()
+      
         ZStack(alignment:  Alignment(horizontal: .center, vertical: .center)){
            // Image("\(vm.currentRoom.roompic)")
             
@@ -38,7 +40,7 @@ struct DecisionNarritiveText: View {
                         ForEach(vm.roomDialog?.choice ?? []){ thing in
                             Button{
                                 if (thing.nextStoryThing != nil){
-                                    vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [])
+                                    vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [], storyType: .decision)
                                 }else{
                                     vm.roomDialog = nil
                                 }

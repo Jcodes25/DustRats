@@ -27,7 +27,7 @@ struct Room: Identifiable {
     }
         
     static let rooms: [Room] = [
-        Room(roompic: "newerdorwhodis", itemsInRoom: [Item.items.randomElement()!], storyThingFromRoom: storyThing(text: "The door slide open but before you can truely get a good look at its contents you hear the sound someone coming down the hallway. You quickly turn to the first things you see for a hiding place. A giant tube, a desk and a", choice: [Choice(description: "Hide in tube", type: .decision), Choice(description: "Crouch under desk", type: .decision)])),
+        Room(roompic: "newerdorwhodis", itemsInRoom: [Item.items.randomElement()!], storyThingFromRoom: storyThing(text: "The door slide open but before you can truely get a good look at its contents you hear the sound someone coming down the hallway. You quickly turn to the first things you see for a hiding place. A giant tube, a desk and a", choice: [Choice(description: "Hide in tube"), Choice(description: "Crouch under desk")], storyType: .decision)),
         Room(roompic: "room", itemsInRoom: [Item.items.randomElement()!]),
         Room(roompic: "poolrooms", itemsInRoom: [Item.items.randomElement()!]),
         Room(roompic: "room1", itemsInRoom: [Item.items.randomElement()!]),

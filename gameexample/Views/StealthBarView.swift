@@ -24,9 +24,16 @@ struct StealthBarView: View {
         
         
         Section{
-            Image("\(vm.barurl)").resizable().aspectRatio(contentMode: .fit).onTapGesture{
+            Image("\(vm.randomStatusArray[vm.stealthStatus].description)").resizable().aspectRatio(contentMode: .fit).onTapGesture{
                             print("this is working kinda")
-                            vm.barurl = vm.randomStatusArray.randomElement()!.description
+//                vm.barurl = vm.randomStatusArray[vm.stealthStatus].description
+//                vm.randomStatusArray.randomElement()!.description
+                while vm.stealthStatus < vm.randomStatusArray.count - 1 {
+                    vm.stealthStatus += 1
+                    break
+                }
+                
+                
                         }
         }.frame(height: 40)
         

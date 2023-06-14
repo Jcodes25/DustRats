@@ -16,6 +16,7 @@ struct NarrativeTextBox: View {
             
           
                 NarrativeBackground(vm:vm)
+          
             
             
             VStack{
@@ -45,12 +46,13 @@ struct NarrativeTextBox: View {
                         ForEach(vm.roomDialog?.choice ?? []){ thing in
                             Button{
                                 if (thing.nextStoryThing != nil){
-                                    vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [])
+                                    vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [], storyType: .decision)
                                 }else{
                                     vm.roomDialog = nil
                                 }
                                 
-                                
+                                vm.stealthStatus += 1
+                                print(vm.stealthStatus)
                                 print("\(vm.roomDialog?.text)")
                             } label:{
                                 VStack(spacing: -16){
