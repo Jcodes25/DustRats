@@ -27,7 +27,7 @@ struct Room: Identifiable {
     }
         
     static let rooms: [Room] = [
-        Room(personInRoom: Person(hp: nil, portrait: "highguard", dialog: ["You aren't supposed to be here"], inventory: [], dialog2: [], choice: nil, nameOfPerson: "Strong Guard", strength: 10), roompic: "newerdorwhodis", itemsInRoom: [Item.items.randomElement()!], storyThingFromRoom: storyThing(text: "The door slide open but before you can truely get a good look at its contents you hear the sound someone coming down the hallway. You quickly turn to the first things you see for a hiding place. A giant tube, a desk and a", choice: [Choice(description: "Hide in tube"), Choice(description: "Crouch under desk")], storyType: .decision)),
+        Room(personInRoom: Person(hp: nil, portrait: "villian", dialog: ["You aren't supposed to be here, where are you here ","do me a favor", "go back to your cell b4 i kill u"], inventory: [], dialog2: [], choice: nil, nameOfPerson: "Strong Guard", strength: 10), roompic: "newerdorwhodis", itemsInRoom: [Item.items.randomElement()!], storyThingFromRoom: storyThing(text: "The door slide open but before you can truely get a good look at its contents you hear the sound someone coming down the hallway. You quickly turn to the first things you see for a hiding place. A giant tube, a desk and a", choice: [Choice(description: "Hide in tube"), Choice(description: "Crouch under desk")], storyType: .decision)),
         Room(roompic: "DR_2DoorsResizeFinal", itemsInRoom: [Item.items.randomElement()!])
 //        Room(roompic: "room", itemsInRoom: [Item.items.randomElement()!]),
 //        Room(roompic: "poolrooms", itemsInRoom: [Item.items.randomElement()!]),

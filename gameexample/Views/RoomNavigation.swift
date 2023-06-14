@@ -44,7 +44,10 @@ struct RoomNavigation: View {
                 
             
             Doors(vm:vm)
-            if vm.roomDialog?.text != nil{
+            if vm.currentRoom.personInRoom != nil && vm.stealthStatus == 9{
+                CharaTextView(vm: vm).offset(y:250)
+            }
+            if vm.roomDialog?.text != nil && vm.stealthStatus != 9{
                 
                 if vm.roomDialog?.storyType == .decision{
                     DecisionNarritiveText(vm:vm)
@@ -64,6 +67,7 @@ struct RoomNavigation: View {
                
             
             }
+           
             
             
             PlayerStats(vm:vm)
