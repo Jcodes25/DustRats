@@ -50,10 +50,11 @@ struct NarrativeTextBox: View {
                                 }else{
                                     vm.roomDialog = nil
                                 }
-                                
+                                vm.player.inventory.append(Item(itemImg: thing.item?.itemImg, itemName: thing.item?.itemName, itemDescription: thing.item?.itemDescription))
                                 vm.stealthStatus += 1
-                                print(vm.stealthStatus)
-                                print("\(vm.roomDialog?.text)")
+//                                print(vm.stealthStatus)
+//                                print("\(vm.roomDialog?.text)")
+                                print(thing.image)
                             } label:{
                                 VStack(spacing: -16){
                                     Text("\(thing.description)").font(.custom(
