@@ -12,7 +12,7 @@ struct PlayerStats: View {
     var body: some View {
         ZStack(alignment:  Alignment(horizontal: .center, vertical: .center)){
            
-           // Image("\(vm.currentRoom.roompic)")
+         //   Image("\(vm.currentRoom.roompic)")
             Section{
                 let path = Path { path in
                     let width: CGFloat = 342
@@ -73,6 +73,7 @@ struct PlayerStats: View {
                 }
                 path.fill(Color("InsideTextBoxColor"))
                     .overlay(path.stroke(Color("BorderTextBox"), lineWidth: 2))
+                    .shadow(color:Color("ShadowTextBox"), radius: 4)
             }.offset(x:20)
             
           //  ZStack{
@@ -86,7 +87,7 @@ struct PlayerStats: View {
                         ZStack(alignment: .leading){
                             Image("portraitbackground")
                             Image("coolperson")
-                        }.offset(y:-22)
+                        }.offset(x:-13,y:-22)
 
                         //Spacer().frame(width:46)
 //                        Section{

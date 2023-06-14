@@ -51,6 +51,9 @@ struct Doors: View {
                     .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
                         vm.changeLookOfRoom()
                         vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? nil
+                        if vm.currentRoom.roompic == "stairs"{
+                            vm.stealthStatus = 0
+                        }
                     }
                    
                 
@@ -92,6 +95,9 @@ struct Doors: View {
                     .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
                         vm.changeLookOfRoom()
                         vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? nil
+                        if vm.currentRoom.roompic == "stairs"{
+                            vm.stealthStatus = 0
+                        }
                     }
                    
                 
