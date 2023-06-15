@@ -11,6 +11,9 @@
 		17EB9AFF2A3121BA009BA401 /* RoomCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9AFE2A3121BA009BA401 /* RoomCount.swift */; };
 		17EB9B012A312270009BA401 /* StealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B002A312270009BA401 /* StealthBar.swift */; };
 		17EB9B032A326A7F009BA401 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B022A326A7F009BA401 /* Event.swift */; };
+		17EB9B082A3B8BA2009BA401 /* Path+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B072A3B8BA2009BA401 /* Path+Extension.swift */; };
+		17EB9B0A2A3B8DF8009BA401 /* DoorOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B092A3B8DF8009BA401 /* DoorOptions.swift */; };
+		17EB9B0C2A3B9721009BA401 /* Doors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B0B2A3B9720009BA401 /* Doors.swift */; };
 		74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C14DEC2A0EB976000BD90B /* RoomNavigation.swift */; };
 		74C14DEF2A0EB9BE000BD90B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C14DEE2A0EB9BE000BD90B /* ViewModel.swift */; };
 		74CD79522A267B3200BCE74E /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD79512A267B3200BCE74E /* Choice.swift */; };
@@ -31,20 +34,13 @@
 		E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947A2A2670A4006E5313 /* InventoryView.swift */; };
 		E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947C2A2677AE006E5313 /* StealthBarView.swift */; };
 		E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B948A2A27A429006E5313 /* CharaTextView.swift */; };
-		E78B948D2A27A858006E5313 /* DoorButtonsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B948C2A27A858006E5313 /* DoorButtonsNavigation.swift */; };
 		E7D1D6D22A043EE50056FBDB /* gameexampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6D12A043EE50056FBDB /* gameexampleApp.swift */; };
 		E7D1D6D42A043EE50056FBDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6D32A043EE50056FBDB /* ContentView.swift */; };
 		E7D1D6D62A043EE60056FBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D1D6D52A043EE60056FBDB /* Assets.xcassets */; };
 		E7D1D6D92A043EE60056FBDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D1D6D82A043EE60056FBDB /* Preview Assets.xcassets */; };
-		E7D1D6E22A057D9B0056FBDB /* room2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6E12A057D9B0056FBDB /* room2View.swift */; };
-		E7D1D6E42A05895D0056FBDB /* turningright.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6E32A05895D0056FBDB /* turningright.swift */; };
-		E7D1D6E62A058A9E0056FBDB /* forward.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6E52A058A9E0056FBDB /* forward.swift */; };
-		E7D1D6E82A0A2AFC0056FBDB /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6E72A0A2AFC0056FBDB /* test.swift */; };
 		E7D1D6EA2A0AE1EF0056FBDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6E92A0AE1EF0056FBDB /* Room.swift */; };
-		E7D1D6EC2A0C3A510056FBDB /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6EB2A0C3A510056FBDB /* test2.swift */; };
 		E7D46DF02A33AF8B00B4A8E3 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DEF2A33AF8B00B4A8E3 /* StoryModel.swift */; };
 		E7D46DF22A33B02200B4A8E3 /* NarrativeTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF12A33B02200B4A8E3 /* NarrativeTextBox.swift */; };
-		E7DFD3282A2FA187004C9C42 /* Doors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFD3272A2FA187004C9C42 /* Doors.swift */; };
 		E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +48,9 @@
 		17EB9AFE2A3121BA009BA401 /* RoomCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCount.swift; sourceTree = "<group>"; };
 		17EB9B002A312270009BA401 /* StealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StealthBar.swift; sourceTree = "<group>"; };
 		17EB9B022A326A7F009BA401 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		17EB9B072A3B8BA2009BA401 /* Path+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Path+Extension.swift"; sourceTree = "<group>"; };
+		17EB9B092A3B8DF8009BA401 /* DoorOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorOptions.swift; sourceTree = "<group>"; };
+		17EB9B0B2A3B9720009BA401 /* Doors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doors.swift; sourceTree = "<group>"; };
 		74C14DEC2A0EB976000BD90B /* RoomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNavigation.swift; sourceTree = "<group>"; };
 		74C14DEE2A0EB9BE000BD90B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		74CD79512A267B3200BCE74E /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
@@ -74,21 +73,14 @@
 		E78B947A2A2670A4006E5313 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		E78B947C2A2677AE006E5313 /* StealthBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StealthBarView.swift; sourceTree = "<group>"; };
 		E78B948A2A27A429006E5313 /* CharaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharaTextView.swift; sourceTree = "<group>"; };
-		E78B948C2A27A858006E5313 /* DoorButtonsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorButtonsNavigation.swift; sourceTree = "<group>"; };
 		E7D1D6CE2A043EE50056FBDB /* DustRats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DustRats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D1D6D12A043EE50056FBDB /* gameexampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameexampleApp.swift; sourceTree = "<group>"; };
 		E7D1D6D32A043EE50056FBDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7D1D6D52A043EE60056FBDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D1D6D82A043EE60056FBDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E7D1D6E12A057D9B0056FBDB /* room2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = room2View.swift; sourceTree = "<group>"; };
-		E7D1D6E32A05895D0056FBDB /* turningright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turningright.swift; sourceTree = "<group>"; };
-		E7D1D6E52A058A9E0056FBDB /* forward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forward.swift; sourceTree = "<group>"; };
-		E7D1D6E72A0A2AFC0056FBDB /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		E7D1D6E92A0AE1EF0056FBDB /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
-		E7D1D6EB2A0C3A510056FBDB /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
 		E7D46DEF2A33AF8B00B4A8E3 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		E7D46DF12A33B02200B4A8E3 /* NarrativeTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrativeTextBox.swift; sourceTree = "<group>"; };
-		E7DFD3272A2FA187004C9C42 /* Doors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doors.swift; sourceTree = "<group>"; };
 		E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E7D1D6E92A0AE1EF0056FBDB /* Room.swift */,
+				17EB9B092A3B8DF8009BA401 /* DoorOptions.swift */,
 				17EB9B002A312270009BA401 /* StealthBar.swift */,
 				17EB9B022A326A7F009BA401 /* Event.swift */,
 				17EB9AFE2A3121BA009BA401 /* RoomCount.swift */,
@@ -126,12 +119,12 @@
 				74C14DEC2A0EB976000BD90B /* RoomNavigation.swift */,
 				E78B947A2A2670A4006E5313 /* InventoryView.swift */,
 				A935FAD82A2913BF00B3CDDF /* TextboxView.swift */,
+				17EB9B0B2A3B9720009BA401 /* Doors.swift */,
 				A99F843C2A2E512F006B13D0 /* InventoryBoxView.swift */,
 				E78B948A2A27A429006E5313 /* CharaTextView.swift */,
-				E78B948C2A27A858006E5313 /* DoorButtonsNavigation.swift */,
-				E7DFD3272A2FA187004C9C42 /* Doors.swift */,
 				E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */,
 				E7D46DF12A33B02200B4A8E3 /* NarrativeTextBox.swift */,
+				17EB9B072A3B8BA2009BA401 /* Path+Extension.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,12 +175,7 @@
 			children = (
 				A987571C2A2A6DB200226BE6 /* Info.plist */,
 				E7D1D6D12A043EE50056FBDB /* gameexampleApp.swift */,
-				E7D1D6E12A057D9B0056FBDB /* room2View.swift */,
 				E7D1D6D32A043EE50056FBDB /* ContentView.swift */,
-				E7D1D6E32A05895D0056FBDB /* turningright.swift */,
-				E7D1D6E52A058A9E0056FBDB /* forward.swift */,
-				E7D1D6E72A0A2AFC0056FBDB /* test.swift */,
-				E7D1D6EB2A0C3A510056FBDB /* test2.swift */,
 				E78B94AA2A2A6DA4006E5313 /* ViewModel */,
 				74CD79502A267B2200BCE74E /* Models */,
 				74CD79592A267BBC00BCE74E /* Views */,
@@ -287,28 +275,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				17EB9AFF2A3121BA009BA401 /* RoomCount.swift in Sources */,
-				E7DFD3282A2FA187004C9C42 /* Doors.swift in Sources */,
-				E7D1D6EC2A0C3A510056FBDB /* test2.swift in Sources */,
 				E7D1D6EA2A0AE1EF0056FBDB /* Room.swift in Sources */,
 				17EB9AF92A2FD5AC009BA401 /* InventoryBoxView.swift in Sources */,
 				17EB9B012A312270009BA401 /* StealthBar.swift in Sources */,
 				74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */,
-				E78B948D2A27A858006E5313 /* DoorButtonsNavigation.swift in Sources */,
+				17EB9B082A3B8BA2009BA401 /* Path+Extension.swift in Sources */,
 				74C14DEF2A0EB9BE000BD90B /* ViewModel.swift in Sources */,
 				E7D46DF22A33B02200B4A8E3 /* NarrativeTextBox.swift in Sources */,
-				E7D1D6E22A057D9B0056FBDB /* room2View.swift in Sources */,
 				74CD79522A267B3200BCE74E /* Choice.swift in Sources */,
-				E7D1D6E82A0A2AFC0056FBDB /* test.swift in Sources */,
+				17EB9B0C2A3B9721009BA401 /* Doors.swift in Sources */,
 				74CD79542A267B4100BCE74E /* Trash.swift in Sources */,
 				E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */,
-				E7D1D6E62A058A9E0056FBDB /* forward.swift in Sources */,
 				74CD79582A267B7100BCE74E /* Item.swift in Sources */,
 				E7D1D6D42A043EE50056FBDB /* ContentView.swift in Sources */,
-				E7D1D6E42A05895D0056FBDB /* turningright.swift in Sources */,
 				E7D1D6D22A043EE50056FBDB /* gameexampleApp.swift in Sources */,
 				E7D46DF02A33AF8B00B4A8E3 /* StoryModel.swift in Sources */,
 				E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */,
 				A935FAD92A2913BF00B3CDDF /* TextboxView.swift in Sources */,
+				17EB9B0A2A3B8DF8009BA401 /* DoorOptions.swift in Sources */,
 				74CD79562A267B5C00BCE74E /* Person.swift in Sources */,
 				E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */,
 				E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */,

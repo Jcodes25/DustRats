@@ -11,13 +11,9 @@ import SwiftUI
 struct Room: Identifiable {
     let id = UUID()
     var personInRoom: Person?
-    var key:Item?
-    var dialog:String?
-    var choices:[Choice]?
     var roompic:String
-//    var itemsInRoom: [Item]?
     var roomEvent: [Event]?
-    var storyThingFromRoom: storyThing?
+    let doors: [DoorOptions]
 
     mutating func move() {
         self = Room.rooms.randomElement()!
@@ -28,17 +24,17 @@ struct Room: Identifiable {
     }
         
     static let rooms: [Room] = [
-        Room(roompic: "newerdorwhodis", roomEvent: [Event.events.randomElement()!], storyThingFromRoom: storyThing(text: "The door slide open but before you can truely get a good look at its contents you hear the sound someone coming down the hallway. You quickly turn to the first things you see for a hiding place. A giant tube, a desk and a", choice: [Choice(description: "Hide in tube", type: .decision), Choice(description: "Crouch under desk", type: .decision)])),
-        Room(roompic: "room", roomEvent: [Event.events.randomElement()!]),
-        Room(roompic: "poolrooms", roomEvent: [Event.events.randomElement()!]),
-        Room(roompic: "room1", roomEvent: [Event.events.randomElement()!]),
-        Room(roompic: "room2", roomEvent: [Event.events.randomElement()!]),
-        Room(roompic: "hallway", roomEvent: [Event.events.randomElement()!]),
-        Room(roompic: "backgroundthingy", roomEvent: [Event.events.randomElement()!]),
-        Room(roompic: "MainRoom", roomEvent: [Event.events.randomElement()!]),
-        Room(roompic: "newdorwhodis", roomEvent: [Event.events.randomElement()!])
+        Room(roompic: "HolDaDor", roomEvent: [Event.events.randomElement()!], doors: [.center, .left]),
+        Room(roompic: "newerdorwhodis", roomEvent: [Event.events.randomElement()!], doors: [.center, .left, .right]),
+        Room(roompic: "", roomEvent: [Event.events.randomElement()!], doors: [.center]),
+        Room(roompic: "", roomEvent: [Event.events.randomElement()!], doors: [.center]),
+        Room(roompic: "", roomEvent: [Event.events.randomElement()!], doors: [.center]),
+        Room(roompic: "", roomEvent: [Event.events.randomElement()!], doors: [.center]),
+        Room(roompic: "", roomEvent: [Event.events.randomElement()!], doors: [.center]),
+        Room(roompic: "", roomEvent: [Event.events.randomElement()!], doors: [.center]),
+        Room(roompic: "newdorwhodis", roomEvent: [Event.events.randomElement()!], doors: [.center])
              ]
-    static let stairs: [Room] = [Room(roompic:"stairs")]
+    static let stairs: [Room] = [Room(roompic:"stairs", doors: [.elevator])]
 }
 
 extension Room: Equatable {

@@ -19,13 +19,13 @@ class ViewModel: ObservableObject {
     @Published var barurl = "Stealth_0"
     @Published var roomDialog: Event
     
-    var choices:[Choice] {
-        if let choices = currentRoom.choices {
-            return choices
-        } else {
-            return []
-        }
-    }
+//    var choices:[Choice] {
+//        if let choices = currentRoom.choices {
+//            return choices
+//        } else {
+//            return []
+//        }
+//    }
     @Published var selectedItem = Item()
     //    @Published var roomDialog:String
     //chara dialog stuff

@@ -84,9 +84,10 @@ struct PlayerStats: View {
 
                     HStack{
                         ZStack(alignment: .leading){
-                            Image("portraitbackground")
-                            Image("coolperson")
-                        }.offset(y:-22)
+                            Image("nolongerdum")
+//                            Image("portraitbackground")
+//                            Image("coolperson")
+                        }.offset(x: -20, y:-22)
 
                         //Spacer().frame(width:46)
                         Section{

@@ -15,44 +15,13 @@ struct StealthBarView: View {
         progress += 1.0
     }
     var body: some View {
-        
-        // List{
-        
-        
-        
-        
-        
-        
+
         Section{
             Image("\(vm.barurl)").resizable().aspectRatio(contentMode: .fit).onTapGesture{
                             print("this is working kinda")
                             vm.barurl = vm.randomStatusArray.randomElement()!.description
                         }
         }.frame(height: 40)
-        
-        
-        
-        //            .onTapGesture{
-        //            print("this is working kinda")
-        //            vm.barurl = vm.randomStatusArray.randomElement()!.description
-        //        }
-        
-        
-        //                ProgressView(value: progress, total: 100){
-        //                    Text("Risk Meter")
-        //                } currentValueLabel: {
-        //                    Text("\(Int(progress))%")
-        //                }.frame(width:200).background(.blue).tint(.purple)
-        //                .progressViewStyle(.linear)
-        //                .onTapGesture{
-        //                addToTheThing()
-        //            }
-        //
-        
-        
-        
-        // }.scaledToFit()
-
         
     }
 }

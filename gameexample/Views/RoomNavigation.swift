@@ -42,10 +42,10 @@ struct RoomNavigation: View {
             
            
                 
-            
-            Doors(vm:vm)
-            NarrativeTextBox(vm:vm)
-                
+         
+                Doors(vm:vm)
+//            NarrativeTextBox(vm:vm)
+
             
             PlayerStats(vm:vm)
             if vm.showInventory {
@@ -81,6 +81,8 @@ struct RoomNavigation: View {
 
 struct RoomNavigation_Previews: PreviewProvider {
     static var previews: some View {
+        RoomNavigation()
+            .previewDisplayName("iPhone Xr")
         RoomNavigation()
             .previewDevice("iPhone 13")
             .previewDisplayName("13")
