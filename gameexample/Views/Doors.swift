@@ -46,9 +46,11 @@ struct Doors: View {
     
                     path.closeSubpath()
                 }
-                path.fill(Color("InsideTextBoxColor"))
-                    .overlay(path.stroke(Color("BorderTextBox"), lineWidth: 2))
-                    .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
+                path.fill(.white)
+                    .opacity(0.01)
+//                    .overlay(path.stroke(Color("BorderTextBox"), lineWidth: 2))
+//                    .shadow(color:Color("ShadowTextBox"), radius: 4)
+                    .onTapGesture{
                         vm.changeLookOfRoom()
                         vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? nil
                         if vm.currentRoom.roompic == "stairs"{
@@ -90,9 +92,11 @@ struct Doors: View {
     
                     path.closeSubpath()
                 }
-                path4.fill(.purple)
-                    .overlay(path4.stroke(Color("BorderTextBox"), lineWidth: 2))
-                    .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
+                path4.fill(.white)
+                    .opacity(0.01)
+//                    .overlay(path4.stroke(Color("BorderTextBox"), lineWidth: 2))
+//                    .shadow(color:Color("ShadowTextBox"), radius: 4)
+                    .onTapGesture{
                         vm.changeLookOfRoom()
                         vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? nil
                         if vm.currentRoom.roompic == "stairs"{
@@ -134,9 +138,11 @@ struct Doors: View {
     
                     path.closeSubpath()
                 }
-                path5.fill(.black)
-                    .overlay(path5.stroke(Color("BorderTextBox"), lineWidth: 2))
-                    .shadow(color:Color("ShadowTextBox"), radius: 4).onTapGesture{
+                path5.fill(.white)
+                    .opacity(0.01)
+//                    .overlay(path5.stroke(Color("BorderTextBox"), lineWidth: 2))
+//                    .shadow(color:Color("ShadowTextBox"), radius: 4)
+                    .onTapGesture{
                         vm.changeLookOfRoom()
                         vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? nil
                         if vm.currentRoom.roompic == "stairs"{

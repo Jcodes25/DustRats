@@ -24,10 +24,10 @@ struct Person: Identifiable, Equatable{
     public var nameOfPerson:String?
     
     //TODO: make these actually work and stuff
-    @State public var strength: Int = 0
+    public var strength: Int = 0
     public var charisma: Int = 0
     public var intelligence: Int = 0
-    public var Luck: Int = 0
+    public var luck: Int = 0
     //TODO: initialize the stats
     init(hp:Int? = nil, portrait:String?, dialog:[String],inventory:[Item], dialog2:[String], choice:String?, nameOfPerson:String?, strength:Int){
         self.hp = hp

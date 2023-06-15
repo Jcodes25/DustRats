@@ -97,7 +97,7 @@ struct PlayerStats: View {
 //                            Text("INT:\(vm.player.intelligence)").foregroundColor(.orange)
 //                            Text("LCK:\(vm.player.Luck)").foregroundColor(.orange)
 //                        }
-                        StatsAndStuff()
+                        StatsAndStuff(vm)
 
                     }
                 }

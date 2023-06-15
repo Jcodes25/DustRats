@@ -45,6 +45,8 @@ struct NarrativeTextBox: View {
                     HStack{
                         ForEach(vm.roomDialog?.choice ?? []){ thing in
                             Button{
+                                
+                                vm.player.strength += 1
                                 if (thing.nextStoryThing != nil){
                                     vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [], storyType: .decision)
                                 }else{
@@ -55,12 +57,14 @@ struct NarrativeTextBox: View {
 //                                print(vm.stealthStatus)
 //                                print("\(vm.roomDialog?.text)")
                                 print(thing.image)
+                                print("\(vm.player.strength)")
+
                             } label:{
                                 VStack(spacing: -16){
                                     Text("\(thing.description)").font(.custom(
                                         "ChakraPetch-Bold",
                                         fixedSize: 18)).padding().foregroundColor(.white)
-                                    Image("column").resizable().aspectRatio(contentMode: .fit)
+                                    Image("\(thing.item?.itemImg ?? "unknownshinyitem")").resizable().aspectRatio(contentMode: .fit)
                                     
                                 }
                             }

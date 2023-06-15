@@ -8,10 +8,21 @@
 import SwiftUI
 
 struct StatsAndStuff: View {
-    @State var str = Person.player.strength
-    @State var cha = 0
-    @State var int = 0
-    @State var luck = 0
+    @ObservedObject var vm: ViewModel
+    
+    var str: Int {
+        vm.player.strength
+    }
+    
+    var cha: Int {
+        vm.player.charisma
+    }
+    var int: Int {
+        vm.player.intelligence
+    }
+    var luck: Int {
+        vm.player.luck
+    }
     var body: some View {
         Section{
             HStack{
@@ -25,10 +36,13 @@ struct StatsAndStuff: View {
            
         }
     }
+    init(_ vm: ViewModel) {
+        self.vm = vm
+    }
 }
 
 struct StatsAndStuff_Previews: PreviewProvider {
     static var previews: some View {
-        StatsAndStuff()
+        StatsAndStuff(ViewModel())
     }
 }

@@ -46,8 +46,7 @@ struct DecisionNarritiveText: View {
                                 }
                                 
                                 
-                                print("\(vm.roomDialog?.text)")
-                            } label:{
+                            }label:{
                                
                                 ZStack{
                                     GreyChoiceView()
