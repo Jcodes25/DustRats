@@ -43,7 +43,7 @@ struct InventoryView: View {
                                         
                                         tappedOnItem = vm.player.inventory[thing]
                                       //  print(tappedOnItem.itemImg!)
-                                        vm.player.strength = 200
+                                      
                                         print("\(vm.player.strength)")
                                         //                                        if vm.currentRoom.key?.itemName == vm.player.inventory[thing].itemName{
                                         //                                            vm.trash.itemsInTrash.append(vm.player.inventory[thing])
