@@ -31,6 +31,8 @@
 		E7175B472A17D0A30056A94D /* ChakraPetch-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B362A17D0110056A94D /* ChakraPetch-Regular.ttf */; };
 		E7175B482A17D0A30056A94D /* ChakraPetch-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B392A17D0110056A94D /* ChakraPetch-LightItalic.ttf */; };
 		E7175B492A17D0A30056A94D /* ChakraPetch-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B372A17D0110056A94D /* ChakraPetch-SemiBold.ttf */; };
+		E757F8E82A38DA7100B3500A /* GreyChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */; };
+		E757F8EA2A3A1D3900B3500A /* StatsAndStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757F8E92A3A1D3900B3500A /* StatsAndStuff.swift */; };
 		E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947A2A2670A4006E5313 /* InventoryView.swift */; };
 		E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947C2A2677AE006E5313 /* StealthBarView.swift */; };
 		E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B948A2A27A429006E5313 /* CharaTextView.swift */; };
@@ -41,6 +43,10 @@
 		E7D1D6EA2A0AE1EF0056FBDB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6E92A0AE1EF0056FBDB /* Room.swift */; };
 		E7D46DF02A33AF8B00B4A8E3 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DEF2A33AF8B00B4A8E3 /* StoryModel.swift */; };
 		E7D46DF22A33B02200B4A8E3 /* NarrativeTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF12A33B02200B4A8E3 /* NarrativeTextBox.swift */; };
+		E7D46DF42A37808700B4A8E3 /* NarrativeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF32A37808700B4A8E3 /* NarrativeBackground.swift */; };
+		E7D46DF62A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF52A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift */; };
+		E7D46DF82A37AEAB00B4A8E3 /* DecisionNarritiveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF72A37AEAB00B4A8E3 /* DecisionNarritiveText.swift */; };
+		E7DFD3282A2FA187004C9C42 /* Doors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFD3272A2FA187004C9C42 /* Doors.swift */; };
 		E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +76,8 @@
 		E7175B3D2A17D0110056A94D /* ChakraPetch-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-Bold.ttf"; sourceTree = "<group>"; };
 		E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E7175B3F2A17D0110056A94D /* ChakraPetch-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyChoiceView.swift; sourceTree = "<group>"; };
+		E757F8E92A3A1D3900B3500A /* StatsAndStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsAndStuff.swift; sourceTree = "<group>"; };
 		E78B947A2A2670A4006E5313 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		E78B947C2A2677AE006E5313 /* StealthBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StealthBarView.swift; sourceTree = "<group>"; };
 		E78B948A2A27A429006E5313 /* CharaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharaTextView.swift; sourceTree = "<group>"; };
@@ -81,6 +89,10 @@
 		E7D1D6E92A0AE1EF0056FBDB /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		E7D46DEF2A33AF8B00B4A8E3 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		E7D46DF12A33B02200B4A8E3 /* NarrativeTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrativeTextBox.swift; sourceTree = "<group>"; };
+		E7D46DF32A37808700B4A8E3 /* NarrativeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrativeBackground.swift; sourceTree = "<group>"; };
+		E7D46DF52A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionNarrativeTextBoxView.swift; sourceTree = "<group>"; };
+		E7D46DF72A37AEAB00B4A8E3 /* DecisionNarritiveText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionNarritiveText.swift; sourceTree = "<group>"; };
+		E7DFD3272A2FA187004C9C42 /* Doors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doors.swift; sourceTree = "<group>"; };
 		E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +136,11 @@
 				E78B948A2A27A429006E5313 /* CharaTextView.swift */,
 				E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */,
 				E7D46DF12A33B02200B4A8E3 /* NarrativeTextBox.swift */,
+				E7D46DF32A37808700B4A8E3 /* NarrativeBackground.swift */,
+				E7D46DF52A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift */,
+				E7D46DF72A37AEAB00B4A8E3 /* DecisionNarritiveText.swift */,
+				E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */,
+				E757F8E92A3A1D3900B3500A /* StatsAndStuff.swift */,
 				17EB9B072A3B8BA2009BA401 /* Path+Extension.swift */,
 			);
 			path = Views;
@@ -274,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D46DF62A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift in Sources */,
 				17EB9AFF2A3121BA009BA401 /* RoomCount.swift in Sources */,
 				E7D1D6EA2A0AE1EF0056FBDB /* Room.swift in Sources */,
 				17EB9AF92A2FD5AC009BA401 /* InventoryBoxView.swift in Sources */,
+				E7D46DF82A37AEAB00B4A8E3 /* DecisionNarritiveText.swift in Sources */,
 				17EB9B012A312270009BA401 /* StealthBar.swift in Sources */,
 				74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */,
 				17EB9B082A3B8BA2009BA401 /* Path+Extension.swift in Sources */,
@@ -284,12 +303,16 @@
 				E7D46DF22A33B02200B4A8E3 /* NarrativeTextBox.swift in Sources */,
 				74CD79522A267B3200BCE74E /* Choice.swift in Sources */,
 				17EB9B0C2A3B9721009BA401 /* Doors.swift in Sources */,
+				E7D46DF42A37808700B4A8E3 /* NarrativeBackground.swift in Sources */,
+				E7D1D6E82A0A2AFC0056FBDB /* test.swift in Sources */,
+				E757F8E82A38DA7100B3500A /* GreyChoiceView.swift in Sources */,
 				74CD79542A267B4100BCE74E /* Trash.swift in Sources */,
 				E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */,
 				74CD79582A267B7100BCE74E /* Item.swift in Sources */,
 				E7D1D6D42A043EE50056FBDB /* ContentView.swift in Sources */,
 				E7D1D6D22A043EE50056FBDB /* gameexampleApp.swift in Sources */,
 				E7D46DF02A33AF8B00B4A8E3 /* StoryModel.swift in Sources */,
+				E757F8EA2A3A1D3900B3500A /* StatsAndStuff.swift in Sources */,
 				E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */,
 				A935FAD92A2913BF00B3CDDF /* TextboxView.swift in Sources */,
 				17EB9B0A2A3B8DF8009BA401 /* DoorOptions.swift in Sources */,
@@ -427,7 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameexample/Preview Content\"";
-				DEVELOPMENT_TEAM = NHF9L237JV;
+				DEVELOPMENT_TEAM = 4SW86B8349;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameexample/Info.plist;
@@ -458,7 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameexample/Preview Content\"";
-				DEVELOPMENT_TEAM = NHF9L237JV;
+				DEVELOPMENT_TEAM = 4SW86B8349;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameexample/Info.plist;

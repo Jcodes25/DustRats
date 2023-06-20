@@ -12,7 +12,7 @@ struct PlayerStats: View {
     var body: some View {
         ZStack(alignment:  Alignment(horizontal: .center, vertical: .center)){
            
-           // Image("\(vm.currentRoom.roompic)")
+         //   Image("\(vm.currentRoom.roompic)")
             Section{
                 let path = Path { path in
                     let width: CGFloat = 342
@@ -73,6 +73,7 @@ struct PlayerStats: View {
                 }
                 path.fill(Color("InsideTextBoxColor"))
                     .overlay(path.stroke(Color("BorderTextBox"), lineWidth: 2))
+                    .shadow(color:Color("ShadowTextBox"), radius: 4)
             }.offset(x:20)
             
           //  ZStack{
@@ -90,13 +91,14 @@ struct PlayerStats: View {
                         }.offset(x: -20, y:-22)
 
                         //Spacer().frame(width:46)
-                        Section{
-                            Spacer().frame(width: 10)
-                            Text("STR:\(vm.player.strength)").foregroundColor(.orange)
-                            Text("CHA:\(vm.player.charisma)").foregroundColor(.orange)
-                            Text("INT:\(vm.player.intelligence)").foregroundColor(.orange)
-                            Text("LCK:\(vm.player.Luck)").foregroundColor(.orange)
-                        }
+//                        Section{
+//                            Spacer().frame(width: 10)
+//                            Text("STR:\(vm.player.strength)").foregroundColor(.orange)
+//                            Text("CHA:\(vm.player.charisma)").foregroundColor(.orange)
+//                            Text("INT:\(vm.player.intelligence)").foregroundColor(.orange)
+//                            Text("LCK:\(vm.player.Luck)").foregroundColor(.orange)
+//                        }
+                        StatsAndStuff(vm)
 
                     }
                 }
@@ -111,7 +113,7 @@ struct PlayerStats: View {
                 Spacer().frame(height:659)
                 HStack{
                     Spacer().frame(width:80)
-                    StealthBarView()
+                    StealthBarView(vm:vm)
                     Spacer().frame(width:50)
                     Button{
                         print("was: \(vm.showInventory)")

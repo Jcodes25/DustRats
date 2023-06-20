@@ -19,6 +19,10 @@ struct Doors: View {
                         .opacity(0.01)
                         .onTapGesture {
                         vm.changeLookOfRoom()
+                        vm.roomDialog = vm.currentRoom.storyThingFromRoom ?? nil
+                        if vm.currentRoom.roompic == "stairs"{
+                            vm.stealthStatus = 0
+                        }
                     }
                 }
                 .frame(width:400, height:750)

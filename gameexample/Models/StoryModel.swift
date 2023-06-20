@@ -11,9 +11,15 @@ class storyThing : ObservableObject {
     var id = UUID()
     var text: String
     var choice: [Choice]
+    var storyType: storyType
     
-    init(text: String, choice: [Choice]) {
+    init(text: String, choice: [Choice], storyType: storyType) {
         self.text = text
         self.choice = choice
+        self.storyType = storyType
     }
+}
+
+enum storyType{
+    case decision, item
 }
