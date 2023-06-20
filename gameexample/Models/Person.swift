@@ -29,7 +29,7 @@ struct Person: Identifiable, Equatable{
     public var intelligence: Int = 0
     public var luck: Int = 0
     //TODO: initialize the stats
-    init(hp:Int? = nil, portrait:String?, dialog:[String],inventory:[Item], dialog2:[String], choice:String?, nameOfPerson:String?, strength:Int){
+    init(hp:Int? = nil, portrait:String?, dialog:[String],inventory:[Item], dialog2:[String], choice:String?, nameOfPerson:String?, strength:Int, charisma: Int, intelligence:Int, luck:Int){
         self.hp = hp
         self.portrait = portrait
         self.dialog = dialog
@@ -37,9 +37,12 @@ struct Person: Identifiable, Equatable{
         self.dialog2 = dialog2
         self.nameOfPerson = nameOfPerson
         self.strength = strength
+        self.charisma = charisma
+        self.intelligence = intelligence
+        self.luck = luck
     }
     static let playersItems = [Item(itemImg: "column",itemName: "column",itemDescription: "This beautiful column is used to open up doors and stuff thats about it"),Item(itemImg: "BucketofCheeseBallz",itemName: "Bucket of Cheese Ballz",itemDescription: "So delicious...just eat the whole thing")]
-    static let player = Person(hp: 100, portrait: "botaningame", dialog: [], inventory: playersItems, dialog2: [], choice: nil, nameOfPerson: nil,strength: 200 )
+    static let player = Person(hp: 100, portrait: "botaningame", dialog: [], inventory: playersItems, dialog2: [], choice: nil, nameOfPerson: nil,strength: 10, charisma: 10, intelligence: 10, luck: 10)
     
     
 }
