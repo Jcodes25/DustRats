@@ -11,7 +11,7 @@ class storyThing : ObservableObject {
     var id = UUID()
     var text: String
     var choice: [Choice]
-    var storyType: storyType
+    var storyType: storyType?
     
     init(text: String, choice: [Choice], storyType: storyType) {
         self.text = text

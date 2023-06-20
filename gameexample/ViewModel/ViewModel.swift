@@ -76,6 +76,6 @@ class ViewModel: ObservableObject {
         self.player = .player
         self.trash = .init(itemsInTrash: [])
         self.roomCounter = .zero
-        self.roomDialog = Event.events[0]
+//        self.roomDialog = Event.events[0]
     }
 }
