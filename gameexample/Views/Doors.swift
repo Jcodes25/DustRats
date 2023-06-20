@@ -15,11 +15,12 @@ struct Doors: View {
             //  Image("\(vm.currentRoom.roompic)")
             Section{
                 ForEach(doorOptions) { doorOption in
-                    doorOption.door.fill(.white).onTapGesture {
+                    doorOption.door.fill(.white)
+                        .opacity(0.01)
+                        .onTapGesture {
                         vm.changeLookOfRoom()
                     }
                 }
-                .opacity(/*@START_MENU_TOKEN@*/0.1/*@END_MENU_TOKEN@*/)
                 .frame(width:400, height:750)
             }
             
