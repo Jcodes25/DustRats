@@ -24,17 +24,22 @@ struct StatsAndStuff: View {
         vm.player.luck
     }
     var body: some View {
-        Section{
+//        Section{
             HStack{
-                Spacer().frame(width: 10)
-                Text("STR:\(str)")
-                    .foregroundColor(.orange)
-                Text("CHA:\(cha)").foregroundColor(.orange)
-                Text("INT:\(int)").foregroundColor(.orange)
-                Text("LCK:\(luck)").foregroundColor(.orange)
+                Text("STR:\(str)").foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
+                Text("CHA:\(cha)").foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
+                Text("INT:\(int)").foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
+                Text("LCK:\(luck)").foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
+
+            } .background {
+                Image("StatText")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .padding(-16.5)
             }
+                
            
-        }
+//        }
     }
     init(_ vm: ViewModel) {
         self.vm = vm

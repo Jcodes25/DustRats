@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17C5C31D2A43771100B0A670 /* Avenir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C5C31C2A43771100B0A670 /* Avenir.ttf */; };
+		17C5C31F2A437B9100B0A670 /* Courier Prime Code.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C5C31E2A437B9100B0A670 /* Courier Prime Code.ttf */; };
 		17EB9AF92A2FD5AC009BA401 /* InventoryBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99F843C2A2E512F006B13D0 /* InventoryBoxView.swift */; };
 		17EB9AFF2A3121BA009BA401 /* RoomCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9AFE2A3121BA009BA401 /* RoomCount.swift */; };
 		17EB9B012A312270009BA401 /* StealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB9B002A312270009BA401 /* StealthBar.swift */; };
@@ -36,7 +38,6 @@
 		E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947A2A2670A4006E5313 /* InventoryView.swift */; };
 		E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947C2A2677AE006E5313 /* StealthBarView.swift */; };
 		E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B948A2A27A429006E5313 /* CharaTextView.swift */; };
-		E78B948D2A27A858006E5313 /* DoorButtonsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B948C2A27A858006E5313 /* DoorButtonsNavigation.swift */; };
 		E7A576F32A40EF7F00962E08 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A576F22A40EF7F00962E08 /* Event.swift */; };
 		E7D1D6D22A043EE50056FBDB /* gameexampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6D12A043EE50056FBDB /* gameexampleApp.swift */; };
 		E7D1D6D42A043EE50056FBDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1D6D32A043EE50056FBDB /* ContentView.swift */; };
@@ -48,11 +49,12 @@
 		E7D46DF42A37808700B4A8E3 /* NarrativeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF32A37808700B4A8E3 /* NarrativeBackground.swift */; };
 		E7D46DF62A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF52A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift */; };
 		E7D46DF82A37AEAB00B4A8E3 /* DecisionNarritiveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D46DF72A37AEAB00B4A8E3 /* DecisionNarritiveText.swift */; };
-		E7DFD3282A2FA187004C9C42 /* Doors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFD3272A2FA187004C9C42 /* Doors.swift */; };
 		E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17C5C31C2A43771100B0A670 /* Avenir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttf; sourceTree = "<group>"; };
+		17C5C31E2A437B9100B0A670 /* Courier Prime Code.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Courier Prime Code.ttf"; sourceTree = "<group>"; };
 		17EB9AFE2A3121BA009BA401 /* RoomCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCount.swift; sourceTree = "<group>"; };
 		17EB9B002A312270009BA401 /* StealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StealthBar.swift; sourceTree = "<group>"; };
 		17EB9B072A3B8BA2009BA401 /* Path+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Path+Extension.swift"; sourceTree = "<group>"; };
@@ -83,7 +85,6 @@
 		E78B947A2A2670A4006E5313 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		E78B947C2A2677AE006E5313 /* StealthBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StealthBarView.swift; sourceTree = "<group>"; };
 		E78B948A2A27A429006E5313 /* CharaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharaTextView.swift; sourceTree = "<group>"; };
-		E78B948C2A27A858006E5313 /* DoorButtonsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorButtonsNavigation.swift; sourceTree = "<group>"; };
 		E7A576F22A40EF7F00962E08 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E7D1D6CE2A043EE50056FBDB /* DustRats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DustRats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D1D6D12A043EE50056FBDB /* gameexampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameexampleApp.swift; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		E7D46DF32A37808700B4A8E3 /* NarrativeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrativeBackground.swift; sourceTree = "<group>"; };
 		E7D46DF52A37A09100B4A8E3 /* DecisionNarrativeTextBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionNarrativeTextBoxView.swift; sourceTree = "<group>"; };
 		E7D46DF72A37AEAB00B4A8E3 /* DecisionNarritiveText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionNarritiveText.swift; sourceTree = "<group>"; };
-		E7DFD3272A2FA187004C9C42 /* Doors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doors.swift; sourceTree = "<group>"; };
 		E7DFD3292A2FBA41004C9C42 /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +117,6 @@
 				E7D1D6E92A0AE1EF0056FBDB /* Room.swift */,
 				17EB9B092A3B8DF8009BA401 /* DoorOptions.swift */,
 				17EB9B002A312270009BA401 /* StealthBar.swift */,
-				17EB9B022A326A7F009BA401 /* Event.swift */,
 				17EB9AFE2A3121BA009BA401 /* RoomCount.swift */,
 				74CD79572A267B7100BCE74E /* Item.swift */,
 				74CD79552A267B5C00BCE74E /* Person.swift */,
@@ -155,6 +154,7 @@
 		E7175B352A17CFC20056A94D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				17C5C31C2A43771100B0A670 /* Avenir.ttf */,
 				E7175B3D2A17D0110056A94D /* ChakraPetch-Bold.ttf */,
 				E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */,
 				E7175B3C2A17D0110056A94D /* ChakraPetch-Italic.ttf */,
@@ -165,6 +165,7 @@
 				E7175B362A17D0110056A94D /* ChakraPetch-Regular.ttf */,
 				E7175B372A17D0110056A94D /* ChakraPetch-SemiBold.ttf */,
 				E7175B3B2A17D0110056A94D /* ChakraPetch-SemiBoldItalic.ttf */,
+				17C5C31E2A437B9100B0A670 /* Courier Prime Code.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -276,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7175B412A17D09E0056A94D /* ChakraPetch-BoldItalic.ttf in Resources */,
+				17C5C31D2A43771100B0A670 /* Avenir.ttf in Resources */,
 				E7D1D6D92A043EE60056FBDB /* Preview Assets.xcassets in Resources */,
 				E7175B472A17D0A30056A94D /* ChakraPetch-Regular.ttf in Resources */,
 				E7175B452A17D0A30056A94D /* ChakraPetch-MediumItalic.ttf in Resources */,
@@ -283,6 +285,7 @@
 				E7175B432A17D0A30056A94D /* ChakraPetch-Italic.ttf in Resources */,
 				E7175B462A17D0A30056A94D /* ChakraPetch-Medium.ttf in Resources */,
 				E7175B402A17D09A0056A94D /* ChakraPetch-Bold.ttf in Resources */,
+				17C5C31F2A437B9100B0A670 /* Courier Prime Code.ttf in Resources */,
 				E7175B482A17D0A30056A94D /* ChakraPetch-LightItalic.ttf in Resources */,
 				E7175B442A17D0A30056A94D /* ChakraPetch-SemiBoldItalic.ttf in Resources */,
 				E7175B492A17D0A30056A94D /* ChakraPetch-SemiBold.ttf in Resources */,
@@ -312,7 +315,6 @@
 				74CD79522A267B3200BCE74E /* Choice.swift in Sources */,
 				17EB9B0C2A3B9721009BA401 /* Doors.swift in Sources */,
 				E7D46DF42A37808700B4A8E3 /* NarrativeBackground.swift in Sources */,
-				E7D1D6E82A0A2AFC0056FBDB /* test.swift in Sources */,
 				E757F8E82A38DA7100B3500A /* GreyChoiceView.swift in Sources */,
 				74CD79542A267B4100BCE74E /* Trash.swift in Sources */,
 				E78B948B2A27A429006E5313 /* CharaTextView.swift in Sources */,
@@ -327,7 +329,6 @@
 				74CD79562A267B5C00BCE74E /* Person.swift in Sources */,
 				E7DFD32A2A2FBA41004C9C42 /* PlayerStats.swift in Sources */,
 				E78B947D2A2677AE006E5313 /* StealthBarView.swift in Sources */,
-				17EB9B032A326A7F009BA401 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,15 +459,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameexample/Preview Content\"";
-				DEVELOPMENT_TEAM = 4SW86B8349;
+				DEVELOPMENT_TEAM = NHF9L237JV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameexample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,9 +478,12 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DustRats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -489,15 +495,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameexample/Preview Content\"";
-				DEVELOPMENT_TEAM = 4SW86B8349;
+				DEVELOPMENT_TEAM = NHF9L237JV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameexample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,9 +514,12 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DustRats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

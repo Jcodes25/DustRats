@@ -74,6 +74,7 @@ struct RoomNavigation: View {
             
             
             PlayerStats(vm:vm)
+                .offset(x: -9, y: 355)
             if vm.showInventory {
                     InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
                 }
