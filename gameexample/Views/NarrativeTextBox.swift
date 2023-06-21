@@ -46,7 +46,7 @@ struct NarrativeTextBox: View {
                         ForEach(vm.roomDialog?.choice ?? []){ thing in
                             Button{
                                 
-                                vm.player.strength += 1
+                               // vm.player.strength += 1
                                 if (thing.nextStoryThing != nil){
                                     vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [], storyType: .decision)
                                 }else{

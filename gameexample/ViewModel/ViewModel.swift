@@ -25,7 +25,7 @@ class ViewModel: ObservableObject {
 
 
 
-                 Choice(description: "Investigate the plant", nextStoryThing: storyThing(text: "You touch one of the leaves of the plant. Its fake, like you assumed. Real plants are only kept in government controlled green houses due to their endangerment. Even Nova Corp couldn’t afford a a real one.", choice: [Choice(description: "Pull a leaf off the stem"), Choice(description: "Leave the plant alone")], storyType: .decision))],
+                 Choice(description: "Investigate the plant", nextStoryThing: storyThing(text: "You touch one of the leaves of the plant. Its fake, like you assumed. Real plants are only kept in government controlled green houses due to their endangerment. Even Nova Corp couldn’t afford a a real one.", choice: [Choice(description: "Pull a leaf off the stem", nextStoryThing: storyThing(text: "You pull a leaf off and immediately a puff of air materializes out of the stem. It smells fresh and invigorating. This plant must have been made to purify the air and prevent as little effect from the crystals as possible(+1 INT)", choice: [Choice(description: "Great!"), Choice(description: "Whatever")], storyType: .decision), statIncrease: .int), Choice(description: "Leave the plant alone")], storyType: .decision))],
                storyType: .decision)
 //
 //    storyThing(text: "You find yourself in a waiting room, likely used for their unknowing test subjects. People coming in sold a dream of healing and help only to be stolen away or ending up worse than they were when they came in. You notice something shiny stuck between two of the couch cushions",

@@ -41,7 +41,7 @@ struct Person: Identifiable, Equatable{
         self.intelligence = intelligence
         self.luck = luck
     }
-    static let playersItems = [Item(itemImg: "column",itemName: "column",itemDescription: "This beautiful column is used to open up doors and stuff thats about it"),Item(itemImg: "BucketofCheeseBallz",itemName: "Bucket of Cheese Ballz",itemDescription: "So delicious...just eat the whole thing")]
+    static let playersItems = [Item(itemImg: "column",itemName: "column",itemDescription: "This beautiful column is used to open up doors and stuff thats about it"),Item(itemImg: "BucketofCheeseBallz",itemName: "Bucket of Cheese Ballz",itemDescription: "So delicious...just eat the whole thing"), Item(itemImg: "keycardpic", itemName: "Da Keycard 😱", itemDescription: "You can go wherever you want now !!!")]
     static let player = Person(hp: 100, portrait: "botaningame", dialog: [], inventory: playersItems, dialog2: [], choice: nil, nameOfPerson: nil,strength: 10, charisma: 10, intelligence: 10, luck: 10)
     
     

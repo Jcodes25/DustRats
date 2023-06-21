@@ -45,6 +45,10 @@ struct DecisionNarritiveText: View {
                                     vm.roomDialog = nil
                                 }
                                 
+                                if thing.statIncrease == .int{
+                                    vm.player.intelligence += 1
+                                }
+                                
                                 
                             }label:{
                                
