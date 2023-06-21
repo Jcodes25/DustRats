@@ -11,11 +11,8 @@ struct Choice:Identifiable{
     let id = UUID()
     var description:String
     var image: String?
-    var type: choiceType
     var item: Item?
     var nextStoryThing: storyThing?
 }
 
-enum choiceType{
-    case item, decision
-}
+

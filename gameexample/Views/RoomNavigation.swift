@@ -44,9 +44,37 @@ struct RoomNavigation: View {
                 
             
             Doors(vm:vm)
-            NarrativeTextBox(vm:vm)
+            if vm.currentRoom.personInRoom != nil && vm.stealthStatus == 9{
+                CharaTextView(vm: vm).offset(y:250)
+                if   vm.charaDialogCount >= (vm.currentRoom.personInRoom?.dialog.count ?? 0)-1{
+                    YouLostView(vm:vm)
+                }
+            }
+            if vm.roomDialog?.text != nil && vm.stealthStatus != 9{
+                
+                if vm.roomDialog?.storyType == .decision{
+                    DecisionNarritiveText(vm:vm)
+                }else{
+                    ZStack{
+                        
+                         NarrativeTextBox(vm:vm).offset(y:-30)
+                        Button{
+                            vm.roomDialog = nil
+                            vm.changeLookOfRoom()
+                        }label:{
+                            Image("leavebutton").resizable().aspectRatio(contentMode: .fit).frame(width:160)
+                        }.offset(y:-190)
+                    }
+                   
+                }
+               
+            
+            }
+           
+            
             
             PlayerStats(vm:vm)
+                .offset(x: -9, y: 355)
             if vm.showInventory {
                     InventoryView(columns: columns, tappedOnItem: $vm.selectedItem, vm: vm)
                 }
@@ -80,6 +108,8 @@ struct RoomNavigation: View {
 
 struct RoomNavigation_Previews: PreviewProvider {
     static var previews: some View {
+        RoomNavigation()
+            .previewDisplayName("iPhone Xr")
         RoomNavigation()
             .previewDevice("iPhone 13")
             .previewDisplayName("13")

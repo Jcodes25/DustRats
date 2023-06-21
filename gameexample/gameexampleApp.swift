@@ -14,13 +14,7 @@ struct gameexampleApp: App {
         
         WindowGroup {
            // ContentView()
-           // room2View()
-            //forward()
-           // turningright()
-            //forward()
-            //test()
             RoomNavigation()
-           // ProgressBarView()
         }
     }
 }
