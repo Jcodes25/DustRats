@@ -46,13 +46,16 @@ struct NarrativeTextBox: View {
                         ForEach(vm.roomDialog?.choice ?? []){ thing in
                             Button{
                                 
-                                vm.player.strength += 1
+                               // vm.player.strength += 1
                                 if (thing.nextStoryThing != nil){
                                     vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [], storyType: .decision)
                                 }else{
                                     vm.roomDialog = nil
                                 }
-                                vm.player.inventory.append(Item(itemImg: thing.item?.itemImg, itemName: thing.item?.itemName, itemDescription: thing.item?.itemDescription))
+                                if thing.item != nil{
+                                    vm.player.inventory.append(Item(itemImg: thing.item?.itemImg, itemName: thing.item?.itemName, itemDescription: thing.item?.itemDescription))
+                                }
+                               
                                 vm.stealthStatus += 1
 //                                print(vm.stealthStatus)
 //                                print("\(vm.roomDialog?.text)")

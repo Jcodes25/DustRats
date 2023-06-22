@@ -98,6 +98,7 @@ struct PlayerStats: View {
                             StatsAndStuff(vm)
                                 .offset(x: 1)
                         }
+
                     }
                 
             

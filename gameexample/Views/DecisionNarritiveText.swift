@@ -39,13 +39,30 @@ struct DecisionNarritiveText: View {
                     VStack{
                         ForEach(vm.roomDialog?.choice ?? []){ thing in
                             Button{
+                                if thing.item != nil{
+                                    vm.player.inventory.append(Item(itemImg: thing.item?.itemImg, itemName: thing.item?.itemName, itemDescription: thing.item?.itemDescription))
+                                }
                                 if (thing.nextStoryThing != nil){
                                     vm.roomDialog = thing.nextStoryThing ?? storyThing(text: "", choice: [], storyType: .decision)
                                 }else{
                                     vm.roomDialog = nil
                                 }
                                 
+                                if thing.statIncrease == .int{
+                                    vm.player.intelligence += 1
+                                }else if (thing.statIncrease == .cha ) {
+                                    vm.player.charisma += 1
+                                }else if (thing.statIncrease == .str){
+                                    vm.player.strength += 1
+                                }else if thing.statIncrease == .lck{
+                                    vm.player.luck += 1
+                                }else if thing.statIncrease == .strd{
+                                    vm.player.strength -= 1
+                                }
                                 
+//                                vm.currentRoom.storyThingFromRoom?.storyType == .youGotCaught{
+//                                    
+//                                }
                             }label:{
                                
                                 ZStack{
