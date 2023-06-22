@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Courier Prime Code.ttf</string>
 		<string>ChakraPetch-Light.ttf</string>
 		<string>ChakraPetch-Regualr.ttf</string>
 		<string>ChakraPetch-Bold.ttf</string>

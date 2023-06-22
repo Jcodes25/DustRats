@@ -13,6 +13,10 @@ struct Choice:Identifiable{
     var image: String?
     var item: Item?
     var nextStoryThing: storyThing?
+    var statIncrease: SIThingy?
 }
 
 
+enum SIThingy{
+    case str, cha, int, lck, strd
+}
