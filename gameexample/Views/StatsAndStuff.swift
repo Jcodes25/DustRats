@@ -28,10 +28,10 @@ struct StatsAndStuff: View {
             HStack{
                 Spacer().frame(width: 10)
                 Text("STR:\(str)")
-                    .foregroundColor(.orange)
-                Text("CHA:\(cha)").foregroundColor(.orange)
-                Text("INT:\(int)").foregroundColor(.orange)
-                Text("LCK:\(luck)").foregroundColor(.orange)
+                    .foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
+                Text("CHA:\(cha)")  .foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
+                Text("INT:\(int)")  .foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
+                Text("LCK:\(luck)")  .foregroundColor(Color("StatColor")).font(.custom("Courier Prime Code", size: 14))
             }
            
         }

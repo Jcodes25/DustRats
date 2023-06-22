@@ -28,6 +28,9 @@
 		E7175B482A17D0A30056A94D /* ChakraPetch-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B392A17D0110056A94D /* ChakraPetch-LightItalic.ttf */; };
 		E7175B492A17D0A30056A94D /* ChakraPetch-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7175B372A17D0110056A94D /* ChakraPetch-SemiBold.ttf */; };
 		E74465222A3CDCB20062060F /* YouLostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74465212A3CDCB20062060F /* YouLostView.swift */; };
+		E74B46A92A44A2A00082435F /* Courier Prime Code.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E74B46A82A44A2A00082435F /* Courier Prime Code.ttf */; };
+		E74B46AB2A44A3AE0082435F /* DoorOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B46AA2A44A3AE0082435F /* DoorOptions.swift */; };
+		E74B46AD2A44A3C90082435F /* Path+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B46AC2A44A3C90082435F /* Path+Extension.swift */; };
 		E757F8E82A38DA7100B3500A /* GreyChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */; };
 		E757F8EA2A3A1D3900B3500A /* StatsAndStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757F8E92A3A1D3900B3500A /* StatsAndStuff.swift */; };
 		E78B947B2A2670A4006E5313 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B947A2A2670A4006E5313 /* InventoryView.swift */; };
@@ -77,6 +80,9 @@
 		E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E7175B3F2A17D0110056A94D /* ChakraPetch-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChakraPetch-MediumItalic.ttf"; sourceTree = "<group>"; };
 		E74465212A3CDCB20062060F /* YouLostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouLostView.swift; sourceTree = "<group>"; };
+		E74B46A82A44A2A00082435F /* Courier Prime Code.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Courier Prime Code.ttf"; sourceTree = "<group>"; };
+		E74B46AA2A44A3AE0082435F /* DoorOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorOptions.swift; sourceTree = "<group>"; };
+		E74B46AC2A44A3C90082435F /* Path+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+Extension.swift"; sourceTree = "<group>"; };
 		E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyChoiceView.swift; sourceTree = "<group>"; };
 		E757F8E92A3A1D3900B3500A /* StatsAndStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsAndStuff.swift; sourceTree = "<group>"; };
 		E78B947A2A2670A4006E5313 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				74CD79512A267B3200BCE74E /* Choice.swift */,
 				E7D46DEF2A33AF8B00B4A8E3 /* StoryModel.swift */,
 				E7A576F22A40EF7F00962E08 /* Event.swift */,
+				E74B46AA2A44A3AE0082435F /* DoorOptions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 				E7D46DF72A37AEAB00B4A8E3 /* DecisionNarritiveText.swift */,
 				E757F8E72A38DA7100B3500A /* GreyChoiceView.swift */,
 				E757F8E92A3A1D3900B3500A /* StatsAndStuff.swift */,
+				E74B46AC2A44A3C90082435F /* Path+Extension.swift */,
 				E74465212A3CDCB20062060F /* YouLostView.swift */,
 			);
 			path = Views;
@@ -157,6 +165,7 @@
 		E7175B352A17CFC20056A94D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E74B46A82A44A2A00082435F /* Courier Prime Code.ttf */,
 				E7175B3D2A17D0110056A94D /* ChakraPetch-Bold.ttf */,
 				E7175B3E2A17D0110056A94D /* ChakraPetch-BoldItalic.ttf */,
 				E7175B3C2A17D0110056A94D /* ChakraPetch-Italic.ttf */,
@@ -287,6 +296,7 @@
 				E7175B472A17D0A30056A94D /* ChakraPetch-Regular.ttf in Resources */,
 				E7175B452A17D0A30056A94D /* ChakraPetch-MediumItalic.ttf in Resources */,
 				E7D1D6D62A043EE60056FBDB /* Assets.xcassets in Resources */,
+				E74B46A92A44A2A00082435F /* Courier Prime Code.ttf in Resources */,
 				E7175B432A17D0A30056A94D /* ChakraPetch-Italic.ttf in Resources */,
 				E7175B462A17D0A30056A94D /* ChakraPetch-Medium.ttf in Resources */,
 				E7175B402A17D09A0056A94D /* ChakraPetch-Bold.ttf in Resources */,
@@ -314,10 +324,12 @@
 				E74465222A3CDCB20062060F /* YouLostView.swift in Sources */,
 				E7D46DF82A37AEAB00B4A8E3 /* DecisionNarritiveText.swift in Sources */,
 				17EB9B012A312270009BA401 /* StealthBar.swift in Sources */,
+				E74B46AB2A44A3AE0082435F /* DoorOptions.swift in Sources */,
 				74C14DED2A0EB976000BD90B /* RoomNavigation.swift in Sources */,
 				E78B948D2A27A858006E5313 /* DoorButtonsNavigation.swift in Sources */,
 				74C14DEF2A0EB9BE000BD90B /* ViewModel.swift in Sources */,
 				E7D46DF22A33B02200B4A8E3 /* NarrativeTextBox.swift in Sources */,
+				E74B46AD2A44A3C90082435F /* Path+Extension.swift in Sources */,
 				E7D1D6E22A057D9B0056FBDB /* room2View.swift in Sources */,
 				74CD79522A267B3200BCE74E /* Choice.swift in Sources */,
 				E7D46DF42A37808700B4A8E3 /* NarrativeBackground.swift in Sources */,
