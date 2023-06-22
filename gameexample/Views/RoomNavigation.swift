@@ -46,7 +46,7 @@ struct RoomNavigation: View {
             Doors(vm:vm)
             if vm.currentRoom.personInRoom != nil && vm.stealthStatus == 9{
                 CharaTextView(vm: vm).offset(y:250)
-                if   vm.charaDialogCount >= (vm.currentRoom.personInRoom?.dialog.count ?? 0)-1    //vm.currentRoom.storyThingFromRoom?.storyType == .youGotCaught {
+                if   vm.charaDialogCount >= (vm.currentRoom.personInRoom?.dialog.count ?? 0) -1    //vm.currentRoom.storyThingFromRoom?.storyType == .youGotCaught {
                     YouLostView(vm:vm)
              //   }
             }
