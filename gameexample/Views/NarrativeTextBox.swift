@@ -52,7 +52,10 @@ struct NarrativeTextBox: View {
                                 }else{
                                     vm.roomDialog = nil
                                 }
-                                vm.player.inventory.append(Item(itemImg: thing.item?.itemImg, itemName: thing.item?.itemName, itemDescription: thing.item?.itemDescription))
+                                if thing.item != nil{
+                                    vm.player.inventory.append(Item(itemImg: thing.item?.itemImg, itemName: thing.item?.itemName, itemDescription: thing.item?.itemDescription))
+                                }
+                               
                                 vm.stealthStatus += 1
 //                                print(vm.stealthStatus)
 //                                print("\(vm.roomDialog?.text)")

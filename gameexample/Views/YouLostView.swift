@@ -12,7 +12,9 @@ struct YouLostView: View {
     var body: some View {
         VStack{
             
-            Text("You Lost").foregroundColor(.white)
+            Text("Try Again").font(.custom(
+                "ChakraPetch-Bold",
+                fixedSize: 40)).padding().foregroundColor(.white)
             Button("Restart"){
                 vm.roomDialog   =
             storyThing(text: "You have twotwotwotwotwotwotwotwotwotwotwotow choices", choice:

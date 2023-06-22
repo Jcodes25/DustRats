@@ -18,5 +18,5 @@ struct Choice:Identifiable{
 
 
 enum SIThingy{
-    case str, cha, int, lck
+    case str, cha, int, lck, strd
 }
